@@ -50,14 +50,14 @@ const ReviewsCarousel = () => {
         <Carousel opts={{
         align: 'start',
         loop: true,
-        dragFree: true
+        slidesToScroll: 1
       }} plugins={[Autoplay({
         delay: 4000,
         stopOnInteraction: false,
         stopOnMouseEnter: true
       })]} className="w-full max-w-5xl mx-auto">
-          <CarouselContent>
-            {reviews.map(review => <CarouselItem key={review.id} className="md:basis-1/2 lg:basis-1/3">
+          <CarouselContent className="-ml-2 md:-ml-4">
+            {reviews.map(review => <CarouselItem key={review.id} className="pl-2 md:pl-4 basis-[85%] sm:basis-1/2 lg:basis-1/3">
                 <motion.div initial={{
               opacity: 0,
               scale: 0.95
@@ -68,7 +68,7 @@ const ReviewsCarousel = () => {
               once: true
             }} transition={{
               duration: 0.4
-            }} className="p-2">
+            }} className="h-full">
                   <Card className="h-full hover-lift">
                     <CardContent className="p-6">
                       <div className="flex gap-1 mb-4">
