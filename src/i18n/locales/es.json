@@ -95,6 +95,9 @@
     "consent": "Comprendo",
     "consentText": "Al enviar mi número de teléfono, autorizo a NG Family Shield Insurance a contactarme por mensajes de texto.",
     "submit": "Enviar",
+    "submitting": "Enviando...",
+    "successTitle": "¡Mensaje enviado!",
+    "successMessage": "Nos pondremos en contacto pronto.",
     "callToAction": "¿Prefiere hablar directamente?",
     "callInfo": "Llámenos al: 617-625-1900 o correo electrónico: info@ngfamilyshield.com"
   },

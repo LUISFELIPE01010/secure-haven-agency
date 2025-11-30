@@ -95,6 +95,9 @@
     "consent": "I understand",
     "consentText": "By submitting my phone number, I authorize NG Family Shield Insurance to contact me via text messages.",
     "submit": "Submit",
+    "submitting": "Submitting...",
+    "successTitle": "Message sent!",
+    "successMessage": "We will contact you soon.",
     "callToAction": "Prefer to talk directly?",
     "callInfo": "Call us at: 617-625-1900 or email: info@ngfamilyshield.com"
   },
