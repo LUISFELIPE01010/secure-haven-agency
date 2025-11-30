@@ -12,9 +12,10 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import { LogOut, Mail, Phone, MessageSquare, Calendar } from 'lucide-react';
+import { LogOut, Mail, Phone, MessageSquare, Calendar, Trash2, Download } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { useTranslation } from 'react-i18next';
+import * as XLSX from 'xlsx';
 
 interface QuoteSubmission {
   id: string;
@@ -111,6 +112,108 @@ const Admin = () => {
     navigate('/');
   };
 
+  const handleDeleteQuote = async (id: string) => {
+    try {
+      const { error } = await supabase
+        .from('quote_submissions')
+        .delete()
+        .eq('id', id);
+
+      if (error) throw error;
+
+      toast({
+        title: 'Success',
+        description: 'Quote submission deleted successfully.',
+      });
+      
+      await loadSubmissions();
+    } catch (error) {
+      console.error('Error deleting quote:', error);
+      toast({
+        title: 'Error',
+        description: 'Failed to delete quote submission.',
+        variant: 'destructive',
+      });
+    }
+  };
+
+  const handleDeleteContact = async (id: string) => {
+    try {
+      const { error } = await supabase
+        .from('contact_submissions')
+        .delete()
+        .eq('id', id);
+
+      if (error) throw error;
+
+      toast({
+        title: 'Success',
+        description: 'Contact submission deleted successfully.',
+      });
+      
+      await loadSubmissions();
+    } catch (error) {
+      console.error('Error deleting contact:', error);
+      toast({
+        title: 'Error',
+        description: 'Failed to delete contact submission.',
+        variant: 'destructive',
+      });
+    }
+  };
+
+  const handleExportToExcel = () => {
+    try {
+      // Prepare quotes data
+      const quotesData = quoteSubmissions.map(q => ({
+        'First Name': q.first_name,
+        'Last Name': q.last_name,
+        'Email': q.email,
+        'Phone': q.phone,
+        'Help Type': q.help_type || '-',
+        'Language': q.language,
+        'Date': formatDate(q.created_at)
+      }));
+
+      // Prepare contacts data
+      const contactsData = contactSubmissions.map(c => ({
+        'First Name': c.first_name,
+        'Last Name': c.last_name,
+        'Email': c.email,
+        'Phone': c.phone,
+        'Message': c.message,
+        'Date': formatDate(c.created_at)
+      }));
+
+      // Create workbook with two sheets
+      const wb = XLSX.utils.book_new();
+      const wsQuotes = XLSX.utils.json_to_sheet(quotesData);
+      const wsContacts = XLSX.utils.json_to_sheet(contactsData);
+
+      XLSX.utils.book_append_sheet(wb, wsQuotes, 'Quote Submissions');
+      XLSX.utils.book_append_sheet(wb, wsContacts, 'Contact Submissions');
+
+      // Generate filename with current date
+      const date = new Date().toISOString().split('T')[0];
+      const filename = `ng-family-shield-submissions-${date}.xlsx`;
+
+      // Save file
+      XLSX.writeFile(wb, filename);
+
+      toast({
+        title: 'Success',
+        description: 'Data exported successfully.',
+      });
+    } catch (error) {
+      console.error('Error exporting data:', error);
+      toast({
+        title: 'Error',
+        description: 'Failed to export data.',
+        variant: 'destructive',
+      });
+    }
+  };
+
   const filterByTime = (submissions: any[]) => {
     const now = new Date();
     
@@ -165,19 +268,25 @@ const Admin = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="flex justify-between items-center mb-8">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
             <div>
-              <h1 className="text-4xl font-bold text-foreground mb-2">
+              <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
                 {t('admin.title') || 'Admin Panel'}
               </h1>
               <p className="text-muted-foreground">
                 {t('admin.subtitle') || 'Manage form submissions'}
               </p>
             </div>
-            <Button onClick={handleSignOut} variant="outline">
-              <LogOut className="mr-2 h-4 w-4" />
-              {t('admin.logout') || 'Logout'}
-            </Button>
+            <div className="flex gap-2">
+              <Button onClick={handleExportToExcel} variant="default" className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
+                <Download className="mr-2 h-4 w-4" />
+                Export Excel
+              </Button>
+              <Button onClick={handleSignOut} variant="outline">
+                <LogOut className="mr-2 h-4 w-4" />
+                {t('admin.logout') || 'Logout'}
+              </Button>
+            </div>
           </div>
 
           <div className="mb-6">
@@ -215,7 +324,7 @@ const Admin = () => {
                 ) : (
                   filteredQuotes.map((submission) => (
                     <Card key={submission.id} className="hover:shadow-md transition-shadow">
-                      <CardHeader>
+                      <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-3">
                         <CardTitle className="text-lg flex items-center gap-2">
                           <span>
                             {submission.first_name} {submission.last_name}
@@ -224,6 +333,14 @@ const Admin = () => {
                             ({submission.language.toUpperCase()})
                           </span>
                         </CardTitle>
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          onClick={() => handleDeleteQuote(submission.id)}
+                          className="text-destructive hover:text-destructive hover:bg-destructive/10"
+                        >
+                          <Trash2 className="h-4 w-4" />
+                        </Button>
                       </CardHeader>
                       <CardContent className="space-y-2">
                         <div className="flex items-center gap-2 text-sm">
@@ -266,10 +383,18 @@ const Admin = () => {
                 ) : (
                   filteredContacts.map((submission) => (
                     <Card key={submission.id} className="hover:shadow-md transition-shadow">
-                      <CardHeader>
+                      <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-3">
                         <CardTitle className="text-lg">
                           {submission.first_name} {submission.last_name}
                         </CardTitle>
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          onClick={() => handleDeleteContact(submission.id)}
+                          className="text-destructive hover:text-destructive hover:bg-destructive/10"
+                        >
+                          <Trash2 className="h-4 w-4" />
+                        </Button>
                       </CardHeader>
                       <CardContent className="space-y-2">
                         <div className="flex items-center gap-2 text-sm">
