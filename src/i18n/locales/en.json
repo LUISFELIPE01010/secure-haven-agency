@@ -1,0 +1,279 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "personal": "Personal Insurance",
+    "business": "Business Insurance",
+    "workersComp": "Workers' Compensation",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "hero": {
+    "headline": "Simple, Affordable Insurance Designed to Protect You in the United States.",
+    "subheadline": "Our team has been working in the insurance market for 13 years. We compare various insurance companies, find the best price, and ensure you always have the right coverage.",
+    "cta": "Get a Free Quote",
+    "languages": "We Speak Portuguese • English • Spanish"
+  },
+  "services": {
+    "title": "Our Main Insurance Services",
+    "auto": {
+      "title": "Auto Insurance",
+      "description": "Protect yourself and your vehicle with affordable plans and personalized coverage options."
+    },
+    "home": {
+      "title": "Homeowners Insurance",
+      "description": "Complete protection for your home against damages, accidents, and unexpected events."
+    },
+    "renters": {
+      "title": "Renters Insurance",
+      "description": "Ideal for tenants who want to protect their belongings at a low cost."
+    },
+    "condo": {
+      "title": "Condo Insurance",
+      "description": "Tailored coverage for condo and apartment owners."
+    },
+    "commercial": {
+      "title": "Commercial Insurance",
+      "description": "Comprehensive protection for businesses of all sizes, focused on safety and continuity."
+    },
+    "liability": {
+      "title": "General Liability",
+      "description": "Liability coverage for professionals and businesses seeking peace of mind."
+    },
+    "workers": {
+      "title": "Workers' Compensation",
+      "description": "Essential coverage to protect your employees and keep your business compliant with the law."
+    }
+  },
+  "whyChoose": {
+    "title": "Why Choose Our Agency",
+    "intro": "As an independent insurance broker, we search multiple carriers to find the right coverage at the right price. Our commitment is to offer fast support, clear answers, and simple solutions for your daily life.",
+    "benefits": {
+      "title": "You Get:",
+      "multilingual": "Service in English, Portuguese and Spanish",
+      "comparison": "Price comparison between multiple insurance carriers",
+      "simple": "Simple, no-hassle insurance",
+      "support": "Fast, transparent support",
+      "focused": "A team focused on what is best for you"
+    }
+  },
+  "aboutPreview": {
+    "title": "Who We Are",
+    "text": "We are an insurance agency created to make life easier for people living in the United States. We believe insurance should not be complicated or expensive. Our role is to represent you, not the insurance company. That is why we compare several carriers and recommend only what truly fits your needs.",
+    "learnMore": "Learn More About Us"
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "step1": {
+      "title": "You Contact Us",
+      "description": "Tell us what you need. Simple and friendly support."
+    },
+    "step2": {
+      "title": "We Compare Multiple Carriers",
+      "description": "We search for the best price and coverage options available."
+    },
+    "step3": {
+      "title": "You Choose the Ideal Plan",
+      "description": "No pressure, no hidden fees."
+    },
+    "step4": {
+      "title": "Your Coverage Is Activated",
+      "description": "We stay by your side throughout the year."
+    }
+  },
+  "form": {
+    "title": "Portuguese, Spanish, English — Peace of mind in any language. Let's find the right coverage for you.",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email address",
+    "phone": "Phone",
+    "helpQuestion": "How can we help?",
+    "requestQuote": "I would like to request a quote",
+    "helpPolicy": "I need help with my existing policy",
+    "question": "I have a question",
+    "language": "Preferred language",
+    "consent": "I understand",
+    "consentText": "By submitting my phone number, I authorize NG Family Shield Insurance to contact me via text messages.",
+    "submit": "Submit",
+    "callToAction": "Prefer to talk directly?",
+    "callInfo": "Call us at: 617-625-1900 or email: info@ngfamilyshield.com"
+  },
+  "finalCta": {
+    "title": "Need insurance today? We are here to help.",
+    "callNow": "Call Now",
+    "whatsapp": "WhatsApp Support",
+    "quote": "Get a Free Quote"
+  },
+  "footer": {
+    "tagline": "Protecting families and businesses with simple, affordable insurance solutions.",
+    "quickLinks": "Quick Links",
+    "services": "Our Services",
+    "contact": "Contact Us",
+    "phone": "Phone",
+    "email": "Email",
+    "rights": "All rights reserved.",
+    "followUs": "Follow Us"
+  },
+  "reviews": {
+    "title": "What Our Clients Say",
+    "subtitle": "Check our reviews and see why you should choose NG Family Shield Insurance.",
+    "button": "Read Our Google Reviews",
+    "review1": {
+      "text": "Exceptional service! The team helped me find the perfect auto insurance policy at a great price. They explained everything clearly and were always available to answer my questions.",
+      "name": "Maria Silva"
+    },
+    "review2": {
+      "text": "I have been a client for over 3 years and I am very satisfied. They always find the best prices when it's time to renew and the multilingual support makes everything much easier.",
+      "name": "Carlos Rodriguez"
+    },
+    "review3": {
+      "text": "Professional and efficient service. They helped me protect my business with comprehensive insurance without breaking the bank. I highly recommend them!",
+      "name": "John Anderson"
+    },
+    "review4": {
+      "text": "The best insurance agency I have ever worked with. They are always looking out for my best interests and have saved me hundreds of dollars on my home and auto insurance.",
+      "name": "Ana Oliveira"
+    },
+    "review5": {
+      "text": "Fast, transparent service and fair prices. The team is very knowledgeable and made the entire process simple and stress-free. I wouldn't go anywhere else!",
+      "name": "Michael Santos"
+    }
+  },
+  "personalInsurance": {
+    "hero": {
+      "title": "Personal Insurance Designed to Protect What Matters Most"
+    },
+    "intro": {
+      "text": "Life brings unexpected situations. Our personal insurance options give you peace of mind, financial protection, and the security your family deserves. As an independent agency, we compare multiple carriers to find the right coverage for your needs. Whether you are protecting your vehicle, your home, or your personal assets, we make the process simple and stress-free."
+    },
+    "options": {
+      "title": "Personal Insurance Options",
+      "auto": "Auto Insurance",
+      "home": "Homeowners Insurance",
+      "renters": "Renters Insurance",
+      "condo": "Condo Insurance",
+      "umbrella": "Umbrella Insurance",
+      "life": "Life Insurance",
+      "flood": "Flood Insurance",
+      "motorcycle": "Motorcycle Insurance",
+      "rv": "RV and Travel Trailer Insurance"
+    },
+    "cta": {
+      "title": "Protecting your family starts with the right insurance.",
+      "quote": "Get a Free Quote",
+      "speak": "Speak With an Agent"
+    }
+  },
+  "businessInsurance": {
+    "hero": {
+      "title": "Business Insurance That Protects Your Company, Your Team, and Your Future"
+    },
+    "intro": {
+      "text": "Running a business comes with risks. The right insurance is essential to protect operations, employees, and assets. As an independent agency, we work with multiple carriers to find the exact coverage your business needs, without overpaying. From liability protection to employee coverage, we make the process clear, fast, and stress-free."
+    },
+    "options": {
+      "title": "Business Insurance Options",
+      "liability": "General Liability Insurance",
+      "property": "Commercial Property Insurance",
+      "workers": "Workers' Compensation",
+      "auto": "Commercial Auto Insurance",
+      "bop": "Business Owner's Policy (BOP)",
+      "professional": "Professional Liability (E&O)",
+      "umbrella": "Commercial Umbrella Insurance",
+      "cyber": "Cyber Liability Insurance",
+      "flood": "Commercial Flood Insurance"
+    },
+    "cta": {
+      "title": "Your business deserves security, stability, and peace of mind.",
+      "quote": "Get a Free Quote",
+      "speak": "Talk to an Agent Today"
+    }
+  },
+  "workersComp": {
+    "hero": {
+      "title": "Workers' Compensation Insurance That Protects Your Employees and Your Business"
+    },
+    "intro": {
+      "text": "Accidents can happen in any workplace. Workers' Compensation provides financial protection for employees and legal protection for your business. As an independent agency, we compare multiple carriers to find the right policy for your company while keeping costs under control."
+    },
+    "coverage": {
+      "title": "Coverage Includes",
+      "medical": "Medical Expenses",
+      "wages": "Lost Wages",
+      "disability": "Disability Benefits",
+      "rehab": "Rehabilitation Services",
+      "employer": "Employer Liability Protection",
+      "illness": "Work-Related Illness Coverage"
+    },
+    "benefits": {
+      "title": "Benefits for Your Business",
+      "comply": "Stay compliant with state regulations",
+      "protect": "Protect your team and business assets",
+      "prevent": "Prevent costly lawsuits and claims",
+      "flexible": "Flexible coverage options for any industry"
+    },
+    "cta": {
+      "title": "Protect your workers and your business with the right coverage.",
+      "quote": "Get a Free Quote",
+      "speak": "Speak With an Agent"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Insurance Made Simple, Clear and Accessible for Everyone"
+    },
+    "agency": {
+      "title": "About Our Agency",
+      "text": "We understand the challenges of living and building a life in the United States. As an independent insurance agency, we work with multiple trusted carriers, allowing us to compare prices and coverage to find the plan that truly fits your needs. We represent you, not the insurance companies."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "text": "Our mission is to help individuals, families, and businesses find the right insurance without stress or unnecessary costs. We listen, compare, explain, and guide so you feel confident every step of the way."
+    },
+    "commitment": {
+      "title": "Our Commitment",
+      "simple": "We make the insurance process simple and transparent.",
+      "affordable": "We find affordable options without sacrificing protection.",
+      "multilingual": "We offer support in English, Portuguese, and Spanish.",
+      "available": "We stay available whenever you need us.",
+      "first": "Your best interest comes first."
+    },
+    "different": {
+      "title": "What Makes Us Different",
+      "independent": "Independent agency with access to multiple carriers",
+      "clear": "Clear communication in your preferred language",
+      "support": "Multilingual support for your convenience",
+      "customer": "Customer-first philosophy in everything we do",
+      "personalized": "Personalized recommendations tailored to your needs"
+    },
+    "cta": {
+      "title": "We are here to help you feel protected and confident.",
+      "quote": "Get a Free Quote",
+      "speak": "Talk to an Agent"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "We are Here to Help You With All Your Insurance Needs"
+    },
+    "intro": {
+      "text": "Getting in touch with us is quick and easy. You can call, text, email, or message us anytime. No pressure, no complications. Just friendly and helpful support."
+    },
+    "options": {
+      "title": "Contact Options",
+      "phone": "Phone Support",
+      "phoneText": "Call us directly for immediate assistance",
+      "whatsapp": "WhatsApp Support",
+      "whatsappText": "Send us a message on WhatsApp",
+      "email": "Email Support",
+      "emailText": "Send us an email and we'll respond promptly",
+      "instagram": "Follow Us on Instagram",
+      "instagramText": "Stay updated with our latest news and tips"
+    }
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "text": "Sorry, we couldn't find the page you're looking for.",
+    "button": "Go Back Home"
+  }
+}

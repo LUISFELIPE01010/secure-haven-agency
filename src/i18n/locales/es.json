@@ -1,0 +1,279 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "personal": "Seguro Personal",
+    "business": "Seguro Empresarial",
+    "workersComp": "Compensación de Trabajadores",
+    "about": "Acerca de Nosotros",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "headline": "Seguro Simple y Asequible Diseñado para Protegerlo en los Estados Unidos.",
+    "subheadline": "Nuestro equipo ha trabajado en el mercado de seguros durante 13 años. Comparamos varias compañías de seguros, encontramos el mejor precio y nos aseguramos de que siempre tenga la cobertura adecuada.",
+    "cta": "Obtenga una Cotización Gratuita",
+    "languages": "Hablamos Portugués • Inglés • Español"
+  },
+  "services": {
+    "title": "Nuestros Principales Servicios de Seguros",
+    "auto": {
+      "title": "Seguro de Auto",
+      "description": "Protéjase a sí mismo y a su vehículo con planes asequibles y opciones de cobertura personalizadas."
+    },
+    "home": {
+      "title": "Seguro de Hogar",
+      "description": "Protección completa para su hogar contra daños, accidentes y eventos inesperados."
+    },
+    "renters": {
+      "title": "Seguro de Inquilinos",
+      "description": "Ideal para inquilinos que desean proteger sus pertenencias a bajo costo."
+    },
+    "condo": {
+      "title": "Seguro de Condominio",
+      "description": "Cobertura personalizada para propietarios de condominios y apartamentos."
+    },
+    "commercial": {
+      "title": "Seguro Comercial",
+      "description": "Protección integral para empresas de todos los tamaños, enfocada en seguridad y continuidad."
+    },
+    "liability": {
+      "title": "Responsabilidad General",
+      "description": "Cobertura de responsabilidad para profesionales y empresas que buscan tranquilidad."
+    },
+    "workers": {
+      "title": "Compensación de Trabajadores",
+      "description": "Cobertura esencial para proteger a sus empleados y mantener su negocio en cumplimiento con la ley."
+    }
+  },
+  "whyChoose": {
+    "title": "Por Qué Elegir Nuestra Agencia",
+    "intro": "Como corredor de seguros independiente, buscamos en múltiples aseguradoras para encontrar la cobertura adecuada al precio correcto. Nuestro compromiso es ofrecer soporte rápido, respuestas claras y soluciones simples para su vida diaria.",
+    "benefits": {
+      "title": "Usted Obtiene:",
+      "multilingual": "Servicio en Inglés, Portugués y Español",
+      "comparison": "Comparación de precios entre múltiples aseguradoras",
+      "simple": "Seguro simple, sin complicaciones",
+      "support": "Soporte rápido y transparente",
+      "focused": "Un equipo enfocado en lo que es mejor para usted"
+    }
+  },
+  "aboutPreview": {
+    "title": "Quiénes Somos",
+    "text": "Somos una agencia de seguros creada para facilitar la vida de las personas que viven en los Estados Unidos. Creemos que el seguro no debe ser complicado ni costoso. Nuestro papel es representarlo a usted, no a la compañía de seguros. Por eso comparamos varias aseguradoras y recomendamos solo lo que realmente se ajusta a sus necesidades.",
+    "learnMore": "Aprenda Más Sobre Nosotros"
+  },
+  "howItWorks": {
+    "title": "Cómo Funciona",
+    "step1": {
+      "title": "Usted Nos Contacta",
+      "description": "Díganos lo que necesita. Soporte simple y amigable."
+    },
+    "step2": {
+      "title": "Comparamos Múltiples Aseguradoras",
+      "description": "Buscamos el mejor precio y opciones de cobertura disponibles."
+    },
+    "step3": {
+      "title": "Usted Elige el Plan Ideal",
+      "description": "Sin presión, sin tarifas ocultas."
+    },
+    "step4": {
+      "title": "Su Cobertura se Activa",
+      "description": "Permanecemos a su lado durante todo el año."
+    }
+  },
+  "form": {
+    "title": "Portugués, Español, Inglés — Tranquilidad en cualquier idioma. Encontremos la cobertura adecuada para usted.",
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "helpQuestion": "¿Cómo podemos ayudar?",
+    "requestQuote": "Me gustaría solicitar una cotización",
+    "helpPolicy": "Necesito ayuda con mi póliza existente",
+    "question": "Tengo una pregunta",
+    "language": "Idioma preferido",
+    "consent": "Comprendo",
+    "consentText": "Al enviar mi número de teléfono, autorizo a NG Family Shield Insurance a contactarme por mensajes de texto.",
+    "submit": "Enviar",
+    "callToAction": "¿Prefiere hablar directamente?",
+    "callInfo": "Llámenos al: 617-625-1900 o correo electrónico: info@ngfamilyshield.com"
+  },
+  "finalCta": {
+    "title": "¿Necesita seguro hoy? Estamos aquí para ayudar.",
+    "callNow": "Llamar Ahora",
+    "whatsapp": "Soporte WhatsApp",
+    "quote": "Obtenga una Cotización Gratuita"
+  },
+  "footer": {
+    "tagline": "Protegiendo familias y empresas con soluciones de seguro simples y asequibles.",
+    "quickLinks": "Enlaces Rápidos",
+    "services": "Nuestros Servicios",
+    "contact": "Contacto",
+    "phone": "Teléfono",
+    "email": "Correo Electrónico",
+    "rights": "Todos los derechos reservados.",
+    "followUs": "Síguenos"
+  },
+  "reviews": {
+    "title": "Lo Que Dicen Nuestros Clientes",
+    "subtitle": "Revise nuestras evaluaciones y vea por qué debe elegir NG Family Shield Insurance.",
+    "button": "Lea Nuestras Reseñas en Google",
+    "review1": {
+      "text": "¡Servicio excepcional! El equipo me ayudó a encontrar la póliza de seguro de auto perfecta a un gran precio. Explicaron todo claramente y siempre estaban disponibles para responder mis preguntas.",
+      "name": "Maria Silva"
+    },
+    "review2": {
+      "text": "He sido cliente durante más de 3 años y estoy muy satisfecho. Siempre encuentran los mejores precios cuando es hora de renovar y el soporte multilingüe hace todo mucho más fácil.",
+      "name": "Carlos Rodriguez"
+    },
+    "review3": {
+      "text": "Servicio profesional y eficiente. Me ayudaron a proteger mi negocio con un seguro integral sin arruinarme. ¡Los recomiendo mucho!",
+      "name": "John Anderson"
+    },
+    "review4": {
+      "text": "La mejor agencia de seguros con la que he trabajado. Siempre están velando por mis mejores intereses y me han ahorrado cientos de dólares en mi seguro de hogar y auto.",
+      "name": "Ana Oliveira"
+    },
+    "review5": {
+      "text": "Servicio rápido, transparente y precios justos. El equipo es muy conocedor y hizo que todo el proceso fuera simple y sin estrés. ¡No iría a ningún otro lugar!",
+      "name": "Michael Santos"
+    }
+  },
+  "personalInsurance": {
+    "hero": {
+      "title": "Seguro Personal Diseñado para Proteger Lo Que Más Importa"
+    },
+    "intro": {
+      "text": "La vida trae situaciones inesperadas. Nuestras opciones de seguro personal le brindan tranquilidad, protección financiera y la seguridad que su familia merece. Como agencia independiente, comparamos múltiples aseguradoras para encontrar la cobertura adecuada para sus necesidades. Ya sea que esté protegiendo su vehículo, su hogar o sus activos personales, hacemos que el proceso sea simple y sin estrés."
+    },
+    "options": {
+      "title": "Opciones de Seguro Personal",
+      "auto": "Seguro de Auto",
+      "home": "Seguro de Hogar",
+      "renters": "Seguro de Inquilinos",
+      "condo": "Seguro de Condominio",
+      "umbrella": "Seguro Paraguas",
+      "life": "Seguro de Vida",
+      "flood": "Seguro de Inundación",
+      "motorcycle": "Seguro de Motocicleta",
+      "rv": "Seguro de Tráiler y Casa Rodante"
+    },
+    "cta": {
+      "title": "Proteger a su familia comienza con el seguro adecuado.",
+      "quote": "Obtenga una Cotización Gratuita",
+      "speak": "Hable con un Agente"
+    }
+  },
+  "businessInsurance": {
+    "hero": {
+      "title": "Seguro Empresarial Que Protege Su Empresa, Su Equipo y Su Futuro"
+    },
+    "intro": {
+      "text": "Dirigir un negocio conlleva riesgos. El seguro adecuado es esencial para proteger operaciones, empleados y activos. Como agencia independiente, trabajamos con múltiples aseguradoras para encontrar la cobertura exacta que su negocio necesita, sin pagar de más. Desde protección de responsabilidad hasta cobertura de empleados, hacemos que el proceso sea claro, rápido y sin estrés."
+    },
+    "options": {
+      "title": "Opciones de Seguro Empresarial",
+      "liability": "Seguro de Responsabilidad General",
+      "property": "Seguro de Propiedad Comercial",
+      "workers": "Compensación de Trabajadores",
+      "auto": "Seguro de Auto Comercial",
+      "bop": "Póliza de Propietario de Negocio (BOP)",
+      "professional": "Responsabilidad Profesional (E&O)",
+      "umbrella": "Seguro Paraguas Comercial",
+      "cyber": "Seguro de Responsabilidad Cibernética",
+      "flood": "Seguro de Inundación Comercial"
+    },
+    "cta": {
+      "title": "Su negocio merece seguridad, estabilidad y tranquilidad.",
+      "quote": "Obtenga una Cotización Gratuita",
+      "speak": "Hable con un Agente Hoy"
+    }
+  },
+  "workersComp": {
+    "hero": {
+      "title": "Seguro de Compensación de Trabajadores Que Protege a Sus Empleados y Su Negocio"
+    },
+    "intro": {
+      "text": "Los accidentes pueden ocurrir en cualquier lugar de trabajo. La Compensación de Trabajadores proporciona protección financiera para los empleados y protección legal para su negocio. Como agencia independiente, comparamos múltiples aseguradoras para encontrar la póliza adecuada para su empresa mientras mantenemos los costos bajo control."
+    },
+    "coverage": {
+      "title": "La Cobertura Incluye",
+      "medical": "Gastos Médicos",
+      "wages": "Salarios Perdidos",
+      "disability": "Beneficios por Discapacidad",
+      "rehab": "Servicios de Rehabilitación",
+      "employer": "Protección de Responsabilidad del Empleador",
+      "illness": "Cobertura de Enfermedades Relacionadas con el Trabajo"
+    },
+    "benefits": {
+      "title": "Beneficios para Su Negocio",
+      "comply": "Manténgase en cumplimiento con las regulaciones estatales",
+      "protect": "Proteja a su equipo y activos empresariales",
+      "prevent": "Prevenga demandas y reclamos costosos",
+      "flexible": "Opciones de cobertura flexibles para cualquier industria"
+    },
+    "cta": {
+      "title": "Proteja a sus trabajadores y su negocio con la cobertura adecuada.",
+      "quote": "Obtenga una Cotización Gratuita",
+      "speak": "Hable con un Agente"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Seguro Simple, Claro y Accesible para Todos"
+    },
+    "agency": {
+      "title": "Acerca de Nuestra Agencia",
+      "text": "Entendemos los desafíos de vivir y construir una vida en los Estados Unidos. Como agencia de seguros independiente, trabajamos con múltiples aseguradoras confiables, lo que nos permite comparar precios y coberturas para encontrar el plan que realmente se ajusta a sus necesidades. Lo representamos a usted, no a las compañías de seguros."
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "text": "Nuestra misión es ayudar a individuos, familias y empresas a encontrar el seguro adecuado sin estrés ni costos innecesarios. Escuchamos, comparamos, explicamos y guiamos para que se sienta seguro en cada paso del camino."
+    },
+    "commitment": {
+      "title": "Nuestro Compromiso",
+      "simple": "Hacemos que el proceso de seguro sea simple y transparente.",
+      "affordable": "Encontramos opciones asequibles sin sacrificar la protección.",
+      "multilingual": "Ofrecemos soporte en inglés, portugués y español.",
+      "available": "Estamos disponibles siempre que lo necesite.",
+      "first": "Su mejor interés es lo primero."
+    },
+    "different": {
+      "title": "Lo Que Nos Hace Diferentes",
+      "independent": "Agencia independiente con acceso a múltiples aseguradoras",
+      "clear": "Comunicación clara en su idioma preferido",
+      "support": "Soporte multilingüe para su conveniencia",
+      "customer": "Filosofía centrada en el cliente en todo lo que hacemos",
+      "personalized": "Recomendaciones personalizadas adaptadas a sus necesidades"
+    },
+    "cta": {
+      "title": "Estamos aquí para ayudarlo a sentirse protegido y confiado.",
+      "quote": "Obtenga una Cotización Gratuita",
+      "speak": "Hable con un Agente"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Estamos Aquí para Ayudarlo con Todas Sus Necesidades de Seguro"
+    },
+    "intro": {
+      "text": "Ponerse en contacto con nosotros es rápido y fácil. Puede llamar, enviar un mensaje de texto, correo electrónico o contactarnos en cualquier momento. Sin presión, sin complicaciones. Solo soporte amigable y útil."
+    },
+    "options": {
+      "title": "Opciones de Contacto",
+      "phone": "Soporte Telefónico",
+      "phoneText": "Llámenos directamente para asistencia inmediata",
+      "whatsapp": "Soporte WhatsApp",
+      "whatsappText": "Envíenos un mensaje en WhatsApp",
+      "email": "Soporte por Correo Electrónico",
+      "emailText": "Envíenos un correo electrónico y responderemos rápidamente",
+      "instagram": "Síguenos en Instagram",
+      "instagramText": "Manténgase actualizado con nuestras últimas noticias y consejos"
+    }
+  },
+  "notFound": {
+    "title": "Página No Encontrada",
+    "text": "Lo sentimos, no pudimos encontrar la página que está buscando.",
+    "button": "Volver al Inicio"
+  }
+}
