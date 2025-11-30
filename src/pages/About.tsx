@@ -23,7 +23,7 @@ const About = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-b from-muted/30 to-background">
+      <section className="relative pt-24 pb-12 md:pt-32 lg:pt-40 md:pb-20 lg:pb-28 bg-gradient-to-b from-muted/30 to-background">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -31,7 +31,7 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto text-center"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight mb-4 md:mb-6">
               Insurance Made Simple, Clear and Accessible for Everyone
             </h1>
           </motion.div>
@@ -39,22 +39,22 @@ const About = () => {
       </section>
 
       {/* About the Agency */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4 md:mb-6">
                 About the Agency
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-4 md:mb-6">
                 We understand the challenges of living and building a life in the United States. As an independent insurance agency, we work with multiple trusted carriers, allowing us to compare prices and coverage to find the plan that truly fits your needs.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 We represent you, not the insurance companies.
               </p>
             </motion.div>
@@ -77,7 +77,7 @@ const About = () => {
       </section>
 
       {/* Mission */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-12 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -86,10 +86,10 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4 md:mb-6">
               Our Mission
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
               Our mission is to help individuals, families, and businesses find the right insurance without stress or unnecessary costs. We listen, compare, explain, and guide so you feel confident every step of the way.
             </p>
           </motion.div>
@@ -97,7 +97,7 @@ const About = () => {
       </section>
 
       {/* Commitment */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -106,7 +106,7 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-6 md:mb-8">
               Our Commitment
             </h2>
             <ul className="space-y-4">
@@ -129,21 +129,21 @@ const About = () => {
       </section>
 
       {/* What Makes Us Different */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-12 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-12"
+            className="text-center mb-8 md:mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4">
               What Makes Us Different
             </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-6xl mx-auto">
             {differentiators.map((item, index) => {
               const Icon = item.icon;
               return (
@@ -172,7 +172,7 @@ const About = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-12 md:py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -181,10 +181,10 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
               We are here to help you feel protected and confident.
             </h2>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
                 <Link to="/contact">Get a Free Quote</Link>
               </Button>

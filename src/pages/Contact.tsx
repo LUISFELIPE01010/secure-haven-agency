@@ -32,7 +32,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-b from-muted/30 to-background">
+      <section className="relative pt-24 pb-12 md:pt-32 lg:pt-40 md:pb-20 lg:pb-28 bg-gradient-to-b from-muted/30 to-background">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -40,10 +40,10 @@ const Contact = () => {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto text-center"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight mb-4 md:mb-6">
               We are Here to Help You With All Your Insurance Needs
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+            <p className="text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed">
               Getting in touch with us is quick and easy. You can call, text, email, or message us anytime. No pressure, no complications. Just friendly and helpful support.
             </p>
           </motion.div>
@@ -51,7 +51,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Form */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -66,9 +66,9 @@ const Contact = () => {
       </section>
 
       {/* Contact Options */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-12 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
             {contactOptions.map((option, index) => {
               const Icon = option.icon;
               return (

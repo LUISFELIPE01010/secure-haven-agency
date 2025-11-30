@@ -6,6 +6,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import QuoteForm from '@/components/QuoteForm';
 import ContactForm from '@/components/ContactForm';
 import ReviewsCarousel from '@/components/ReviewsCarousel';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import { useIsMobile } from '@/hooks/use-mobile';
 import familyProtection from '@/assets/family-protection.jpg';
 import howItWorks from '@/assets/how-it-works.jpg';
 import {
@@ -21,6 +23,7 @@ import {
 
 const Home = () => {
   const { t } = useTranslation();
+  const isMobile = useIsMobile();
 
   const services = [
     { icon: Car, key: 'auto', link: '/personal-insurance' },
@@ -45,21 +48,21 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-b from-muted/30 to-background overflow-hidden">
+      <section className="relative pt-24 pb-12 md:pt-32 lg:pt-40 md:pb-20 lg:pb-28 bg-gradient-to-b from-muted/30 to-background overflow-hidden">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight mb-4 md:mb-6">
                 {t('hero.headline')}
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-base md:text-lg lg:text-xl text-muted-foreground mb-6 md:mb-8 leading-relaxed">
                 {t('hero.subheadline')}
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 mb-6">
+              <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-4 md:mb-6">
                 <Button asChild size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
                   <Link to="/contact">{t('hero.cta')}</Link>
                 </Button>
@@ -85,57 +88,96 @@ const Home = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-12"
+            className="text-center mb-8 md:mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4">
               {t('services.title')}
             </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {services.map((service, index) => {
-              const Icon = service.icon;
-              return (
-                <motion.div
-                  key={service.key}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: index * 0.1 }}
-                >
-                  <Link to={service.link}>
-                    <Card className="h-full hover-lift cursor-pointer group border-border bg-card hover:shadow-md transition-all duration-300">
-                      <CardContent className="p-6">
-                        <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-secondary/20 transition-colors">
-                          <Icon className="h-6 w-6 text-secondary" />
-                        </div>
-                        <h3 className="font-semibold text-lg mb-2 text-foreground">
-                          {t(`services.${service.key}.title`)}
-                        </h3>
-                        <p className="text-sm text-muted-foreground">
-                          {t(`services.${service.key}.description`)}
-                        </p>
-                      </CardContent>
-                    </Card>
-                  </Link>
-                </motion.div>
-              );
-            })}
-          </div>
+          {isMobile ? (
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent className="-ml-2 md:-ml-4">
+                {services.map((service, index) => {
+                  const Icon = service.icon;
+                  return (
+                    <CarouselItem key={service.key} className="pl-2 md:pl-4 basis-[85%] sm:basis-1/2">
+                      <Link to={service.link}>
+                        <Card className="h-full hover-lift cursor-pointer group border-border bg-card hover:shadow-md transition-all duration-300">
+                          <CardContent className="p-6">
+                            <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-secondary/20 transition-colors">
+                              <Icon className="h-6 w-6 text-secondary" />
+                            </div>
+                            <h3 className="font-semibold text-lg mb-2 text-foreground">
+                              {t(`services.${service.key}.title`)}
+                            </h3>
+                            <p className="text-sm text-muted-foreground">
+                              {t(`services.${service.key}.description`)}
+                            </p>
+                          </CardContent>
+                        </Card>
+                      </Link>
+                    </CarouselItem>
+                  );
+                })}
+              </CarouselContent>
+              <div className="flex justify-center gap-2 mt-6">
+                <CarouselPrevious className="static translate-y-0" />
+                <CarouselNext className="static translate-y-0" />
+              </div>
+            </Carousel>
+          ) : (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {services.map((service, index) => {
+                const Icon = service.icon;
+                return (
+                  <motion.div
+                    key={service.key}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: index * 0.1 }}
+                  >
+                    <Link to={service.link}>
+                      <Card className="h-full hover-lift cursor-pointer group border-border bg-card hover:shadow-md transition-all duration-300">
+                        <CardContent className="p-6">
+                          <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-secondary/20 transition-colors">
+                            <Icon className="h-6 w-6 text-secondary" />
+                          </div>
+                          <h3 className="font-semibold text-lg mb-2 text-foreground">
+                            {t(`services.${service.key}.title`)}
+                          </h3>
+                          <p className="text-sm text-muted-foreground">
+                            {t(`services.${service.key}.description`)}
+                          </p>
+                        </CardContent>
+                      </Card>
+                    </Link>
+                  </motion.div>
+                );
+              })}
+            </div>
+          )}
         </div>
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-12 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -156,13 +198,13 @@ const Home = () => {
               transition={{ duration: 0.6 }}
               className="order-1 lg:order-2"
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4 md:mb-6">
                 {t('whyChoose.title')}
               </h2>
-              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-base md:text-lg text-muted-foreground mb-6 md:mb-8 leading-relaxed">
                 {t('whyChoose.intro')}
               </p>
-              <h3 className="font-semibold text-xl mb-4 text-foreground">
+              <h3 className="font-semibold text-lg md:text-xl mb-3 md:mb-4 text-foreground">
                 {t('whyChoose.benefits.title')}
               </h3>
               <ul className="space-y-3">
@@ -188,7 +230,7 @@ const Home = () => {
       </section>
 
       {/* About Preview Section */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -197,10 +239,10 @@ const Home = () => {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4 md:mb-6">
               {t('aboutPreview.title')}
             </h2>
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-base md:text-lg text-muted-foreground mb-6 md:mb-8 leading-relaxed">
               {t('aboutPreview.text')}
             </p>
           <Button asChild size="lg" variant="outline">
@@ -214,22 +256,22 @@ const Home = () => {
       <ReviewsCarousel />
 
       {/* How It Works Section */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-12"
+            className="text-center mb-8 md:mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4">
               {t('howItWorks.title')}
             </h2>
           </motion.div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="grid grid-cols-2 gap-6 md:gap-8">
               {steps.map((step, index) => (
                 <motion.div
                   key={step}
@@ -270,7 +312,7 @@ const Home = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-12 md:py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -279,10 +321,10 @@ const Home = () => {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 md:mb-8">
               {t('finalCta.title')}
             </h2>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
                 <a href="tel:617-625-1900">{t('finalCta.callNow')}</a>
               </Button>
@@ -300,20 +342,20 @@ const Home = () => {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="bg-muted/50 rounded-2xl p-8 md:p-12"
+              className="bg-muted/50 rounded-2xl p-6 md:p-8 lg:p-12"
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4">
                 {t('contactPreview.title')}
               </h2>
-              <div className="space-y-6 mt-8">
+              <div className="space-y-4 md:space-y-6 mt-6 md:mt-8">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center flex-shrink-0">
                     <span className="text-xl font-bold text-secondary">1</span>
