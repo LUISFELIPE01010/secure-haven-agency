@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import QuoteForm from '@/components/QuoteForm';
+import ContactForm from '@/components/ContactForm';
 import ReviewsCarousel from '@/components/ReviewsCarousel';
 import familyProtection from '@/assets/family-protection.jpg';
 import howItWorks from '@/assets/how-it-works.jpg';
@@ -295,6 +296,63 @@ const Home = () => {
               </Button>
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Contact Form Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="bg-muted/50 rounded-2xl p-8 md:p-12"
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                Are you ready?
+              </h2>
+              <div className="space-y-6 mt-8">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="text-xl font-bold text-secondary">1</span>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg mb-1">ETAPA 1</h3>
+                    <p className="text-muted-foreground">Preencha o formulário.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="text-xl font-bold text-secondary">2</span>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg mb-1">ETAPA 2</h3>
+                    <p className="text-muted-foreground">Revise suas opções conosco.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="text-xl font-bold text-secondary">3</span>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg mb-1">ETAPA 3</h3>
+                    <p className="text-muted-foreground">Obtenha a cobertura de que precisa.</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <ContactForm />
+            </motion.div>
+          </div>
         </div>
       </section>
     </div>
