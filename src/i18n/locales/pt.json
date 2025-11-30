@@ -116,6 +116,34 @@
     "callToAction": "Prefere falar diretamente?",
     "callInfo": "Ligue para: 617-625-1900 ou e-mail: info@ngfamilyshield.com"
   },
+  "contactForm": {
+    "title": "Entre em Contato com a NG Family Shield",
+    "firstName": "Nome *",
+    "lastName": "Sobrenome *",
+    "email": "E-mail *",
+    "phone": "Telefone *",
+    "message": "Como podemos ajudar? *",
+    "firstNamePlaceholder": "Nome",
+    "lastNamePlaceholder": "Sobrenome",
+    "emailPlaceholder": "seu@email.com",
+    "phonePlaceholder": "(617) 625-1900",
+    "messagePlaceholder": "Por favor, não inclua informações confidenciais e privadas nesta área.",
+    "legalNotice": "Aviso Legal *",
+    "consentText": "Compreendo. Ao enviar meu número de telefone, autorizo a NG Family Shield a se comunicar comigo via mensagens de texto.",
+    "sending": "Enviando...",
+    "submit": "Enviar",
+    "dontLikeForms": "Não gosta de formulários? Entre em contato conosco pelo",
+    "or": "ou",
+    "emailUs": "envie um e-mail",
+    "success": {
+      "title": "Mensagem enviada!",
+      "description": "Entraremos em contato em breve."
+    },
+    "error": {
+      "title": "Erro",
+      "description": "Ocorreu um erro ao enviar sua mensagem. Tente novamente."
+    }
+  },
   "finalCta": {
     "title": "Precisa de seguro hoje? Estamos aqui para ajudar.",
     "callNow": "Ligar Agora",
