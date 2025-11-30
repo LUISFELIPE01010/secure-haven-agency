@@ -2,17 +2,16 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Mail, Phone, Instagram } from 'lucide-react';
 import logo from '@/assets/logo.png';
-
 const Footer = () => {
-  const { t } = useTranslation();
-
-  return (
-    <footer className="bg-primary text-primary-foreground">
+  const {
+    t
+  } = useTranslation();
+  return <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
-            <img src={logo} alt="NG Family Shield" className="h-24 w-auto mb-4" />
+            <img alt="NG Family Shield" className="h-24 w-auto mb-4" src="/lovable-uploads/4c60acde-edbf-4e56-b0d8-44838fae2a09.png" />
             <p className="text-sm text-primary-foreground/80">
               {t('footer.tagline')}
             </p>
@@ -80,12 +79,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2 text-sm text-primary-foreground/80">
                 <Instagram className="h-4 w-4" />
-                <a 
-                  href="https://www.instagram.com/ngfamilyshield/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="hover:text-primary-foreground transition-colors"
-                >
+                <a href="https://www.instagram.com/ngfamilyshield/" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">
                   @ngfamilyshield
                 </a>
               </li>
@@ -98,17 +92,12 @@ const Footer = () => {
             <p className="text-sm text-primary-foreground/60">
               © {new Date().getFullYear()} NG Family Shield Insurance Agency. {t('footer.rights')}
             </p>
-            <Link 
-              to="/auth" 
-              className="text-xs text-primary-foreground/40 hover:text-primary-foreground/60 transition-colors"
-            >
+            <Link to="/auth" className="text-xs text-primary-foreground/40 hover:text-primary-foreground/60 transition-colors">
               Admin
             </Link>
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
