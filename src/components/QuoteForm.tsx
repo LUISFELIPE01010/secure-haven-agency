@@ -73,12 +73,12 @@ const QuoteForm = () => {
   };
 
   return (
-    <div className="bg-background rounded-2xl shadow-lg p-6 md:p-8">
-      <h3 className="text-2xl font-semibold mb-6 text-foreground">
+    <div className="bg-background rounded-2xl shadow-lg p-4 md:p-6 lg:p-8">
+      <h3 className="text-xl md:text-2xl font-semibold mb-4 md:mb-6 text-foreground">
         {t('form.title')}
       </h3>
       
-      <form onSubmit={handleSubmit} className="space-y-5">
+      <form onSubmit={handleSubmit} className="space-y-4 md:space-y-5">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <Label htmlFor="firstName" className="text-foreground">
