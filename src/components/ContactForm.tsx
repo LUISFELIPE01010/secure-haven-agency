@@ -65,14 +65,14 @@ const ContactForm = () => {
   return (
     <div className="bg-card rounded-2xl shadow-lg p-6 md:p-8 border border-border">
       <h3 className="text-2xl font-semibold mb-6 text-foreground">
-        Contato Agência de Seguros Amazônia
+        Contact NG Family Shield
       </h3>
       
       <form onSubmit={handleSubmit} className="space-y-5">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <Label htmlFor="firstName" className="text-foreground">
-              Nome *
+              First Name *
             </Label>
             <Input
               id="firstName"
@@ -80,13 +80,13 @@ const ContactForm = () => {
               onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
               required
               className="mt-1.5"
-              placeholder="Nome"
+              placeholder="First Name"
             />
           </div>
           
           <div>
             <Label htmlFor="lastName" className="text-foreground">
-              Apelido *
+              Last Name *
             </Label>
             <Input
               id="lastName"
@@ -94,7 +94,7 @@ const ContactForm = () => {
               onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
               required
               className="mt-1.5"
-              placeholder="Apelido"
+              placeholder="Last Name"
             />
           </div>
         </div>
@@ -102,7 +102,7 @@ const ContactForm = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <Label htmlFor="email" className="text-foreground">
-              Envie um e-mail para *
+              Email *
             </Label>
             <Input
               id="email"
@@ -111,13 +111,13 @@ const ContactForm = () => {
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               required
               className="mt-1.5"
-              placeholder="seu@email.com"
+              placeholder="your@email.com"
             />
           </div>
           
           <div>
             <Label htmlFor="phone" className="text-foreground">
-              Telefone *
+              Phone *
             </Label>
             <Input
               id="phone"
@@ -126,14 +126,14 @@ const ContactForm = () => {
               onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
               required
               className="mt-1.5"
-              placeholder="(00) 00000-0000"
+              placeholder="(617) 625-1900"
             />
           </div>
         </div>
 
         <div>
           <Label htmlFor="message" className="text-foreground">
-            Como podemos ajudar? *
+            How can we help you? *
           </Label>
           <Textarea
             id="message"
@@ -141,7 +141,7 @@ const ContactForm = () => {
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
             required
             className="mt-1.5 min-h-[120px]"
-            placeholder="Por favor, não inclua informações confidenciais e privadas nesta área."
+            placeholder="Please do not include confidential and private information in this area."
           />
         </div>
 
@@ -155,8 +155,8 @@ const ContactForm = () => {
             required
           />
           <Label htmlFor="consent" className="text-sm font-normal cursor-pointer leading-relaxed">
-            <span className="font-medium">Aviso Legal *</span>{' '}
-            Compreendo. Ao enviar meu número de telefone, autorizo a Amazonia Insurance a se comunicar comigo por meio de mensagens de texto.
+            <span className="font-medium">Legal Notice *</span>{' '}
+            I understand. By submitting my phone number, I authorize NG Family Shield to communicate with me via text messages.
           </Label>
         </div>
 
@@ -165,16 +165,16 @@ const ContactForm = () => {
           disabled={isSubmitting}
           className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/90 h-12 text-base font-medium"
         >
-          {isSubmitting ? 'Enviando...' : 'Aceitar'}
+          {isSubmitting ? 'Sending...' : 'Submit'}
         </Button>
       </form>
 
       <div className="mt-6 pt-6 border-t border-border text-center text-sm text-muted-foreground">
-        Não gosta de formulários? Contacte-nos em{' '}
+        Don't like forms? Contact us at{' '}
         <a href="tel:617-625-1900" className="text-foreground font-medium hover:underline">
           617-625-1900
         </a>{' '}
-        ou{' '}
+        or{' '}
         <a href="mailto:info@ngfamilyshield.com" className="text-foreground font-medium hover:underline">
           email us
         </a>

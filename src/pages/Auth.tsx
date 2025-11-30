@@ -13,8 +13,7 @@ const Auth = () => {
   const navigate = useNavigate();
   const { toast } = useToast();
   const [isLoading, setIsLoading] = useState(false);
-  const [isSignUp, setIsSignUp] = useState(false);
-  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
   useEffect(() => {
@@ -29,37 +28,33 @@ const Auth = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Check hardcoded credentials
+    if (username !== 'NGadmin' || password !== 'NG123') {
+      toast({
+        title: 'Invalid credentials',
+        description: 'Username or password is incorrect.',
+        variant: 'destructive',
+      });
+      return;
+    }
+
     setIsLoading(true);
 
     try {
-      if (isSignUp) {
-        const { error } = await supabase.auth.signUp({
-          email,
-          password,
-          options: {
-            emailRedirectTo: `${window.location.origin}/admin`,
-          },
-        });
-        if (error) throw error;
-        
-        toast({
-          title: 'Conta criada!',
-          description: 'Você pode fazer login agora.',
-        });
-        setIsSignUp(false);
-      } else {
-        const { error } = await supabase.auth.signInWithPassword({
-          email,
-          password,
-        });
-        if (error) throw error;
-        
-        navigate('/admin');
-      }
+      // Sign in with the admin account
+      const { error } = await supabase.auth.signInWithPassword({
+        email: 'admin@ngfamilyshield.com',
+        password: 'NGadmin123!@#',
+      });
+      
+      if (error) throw error;
+      
+      navigate('/admin');
     } catch (error: any) {
       toast({
-        title: 'Erro',
-        description: error.message || 'Ocorreu um erro. Tente novamente.',
+        title: 'Error',
+        description: error.message || 'An error occurred. Please try again.',
         variant: 'destructive',
       });
     } finally {
@@ -79,26 +74,26 @@ const Auth = () => {
           <Card>
             <CardHeader>
               <CardTitle className="text-2xl text-center">
-                {isSignUp ? 'Criar Conta Admin' : 'Admin Login'}
+                Admin Login
               </CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <Label htmlFor="email">Email</Label>
+                  <Label htmlFor="username">Username</Label>
                   <Input
-                    id="email"
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    id="username"
+                    type="text"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
                     required
-                    placeholder="admin@exemplo.com"
+                    placeholder="NGadmin"
                     className="mt-1.5"
                   />
                 </div>
                 
                 <div>
-                  <Label htmlFor="password">Senha</Label>
+                  <Label htmlFor="password">Password</Label>
                   <Input
                     id="password"
                     type="password"
@@ -107,7 +102,6 @@ const Auth = () => {
                     required
                     placeholder="••••••••"
                     className="mt-1.5"
-                    minLength={6}
                   />
                 </div>
 
@@ -119,22 +113,11 @@ const Auth = () => {
                   {isLoading ? (
                     <>
                       <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                      Processando...
+                      Signing in...
                     </>
                   ) : (
-                    isSignUp ? 'Criar Conta' : 'Entrar'
+                    'Sign In'
                   )}
-                </Button>
-
-                <Button
-                  type="button"
-                  variant="ghost"
-                  className="w-full"
-                  onClick={() => setIsSignUp(!isSignUp)}
-                >
-                  {isSignUp
-                    ? 'Já tem uma conta? Entre aqui'
-                    : 'Criar nova conta'}
                 </Button>
               </form>
             </CardContent>
