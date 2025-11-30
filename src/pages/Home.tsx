@@ -311,7 +311,7 @@ const Home = () => {
               className="bg-muted/50 rounded-2xl p-8 md:p-12"
             >
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Are you ready?
+                {t('contactPreview.title')}
               </h2>
               <div className="space-y-6 mt-8">
                 <div className="flex items-start gap-4">
@@ -319,8 +319,8 @@ const Home = () => {
                     <span className="text-xl font-bold text-secondary">1</span>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">ETAPA 1</h3>
-                    <p className="text-muted-foreground">Preencha o formulário.</p>
+                    <h3 className="font-semibold text-lg mb-1">{t('contactPreview.step1.title')}</h3>
+                    <p className="text-muted-foreground">{t('contactPreview.step1.description')}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -328,8 +328,8 @@ const Home = () => {
                     <span className="text-xl font-bold text-secondary">2</span>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">ETAPA 2</h3>
-                    <p className="text-muted-foreground">Revise suas opções conosco.</p>
+                    <h3 className="font-semibold text-lg mb-1">{t('contactPreview.step2.title')}</h3>
+                    <p className="text-muted-foreground">{t('contactPreview.step2.description')}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -337,8 +337,8 @@ const Home = () => {
                     <span className="text-xl font-bold text-secondary">3</span>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">ETAPA 3</h3>
-                    <p className="text-muted-foreground">Obtenha a cobertura de que precisa.</p>
+                    <h3 className="font-semibold text-lg mb-1">{t('contactPreview.step3.title')}</h3>
+                    <p className="text-muted-foreground">{t('contactPreview.step3.description')}</p>
                   </div>
                 </div>
               </div>
