@@ -32,7 +32,17 @@ const WorkersCompensation = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-b from-muted/30 to-background overflow-hidden">
-        <div className="container mx-auto px-4">
+        <div className="absolute inset-0 opacity-20">
+          <motion.img 
+            initial={{ scale: 1.1 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 1.5 }}
+            src={workersSafety} 
+            alt="Workers Safety" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
