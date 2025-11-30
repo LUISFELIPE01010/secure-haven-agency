@@ -176,6 +176,17 @@
       "motorcycle": "Seguro de Motocicleta",
       "rv": "Seguro de Tráiler y Casa Rodante"
     },
+    "details": {
+      "auto": "El seguro de auto lo protege financieramente en caso de accidentes, robo o daños a su vehículo. Puede incluir cobertura de responsabilidad, colisión, integral y más. Obtenga la cobertura que necesita al mejor precio comparando múltiples aseguradoras.",
+      "home": "El seguro de hogar protege su casa y pertenencias personales contra daños por incendio, tormentas, robo y otros eventos cubiertos. También incluye protección de responsabilidad si alguien se lastima en su propiedad.",
+      "renters": "El seguro de inquilinos protege sus pertenencias personales en un apartamento o casa alquilada. Cubre robo, incendio, daños por agua e incluye protección de responsabilidad. Es asequible y esencial para inquilinos.",
+      "condo": "El seguro de condominio está diseñado específicamente para propietarios de condominios, cubriendo el interior de su unidad, pertenencias personales y responsabilidad. Complementa la póliza maestra de la asociación de condominios.",
+      "umbrella": "El seguro paraguas proporciona cobertura adicional de responsabilidad más allá de sus pólizas de auto y hogar. Protege sus activos y ganancias futuras en caso de reclamaciones importantes o demandas.",
+      "life": "El seguro de vida proporciona seguridad financiera para sus seres queridos en caso de su fallecimiento. Puede cubrir costos funerarios, deudas, pagos de hipoteca y proporcionar reemplazo de ingresos para su familia.",
+      "flood": "El seguro de inundación protege su hogar y pertenencias contra daños por inundaciones, que normalmente no están cubiertos por el seguro de hogar estándar. Esencial para propiedades en áreas propensas a inundaciones.",
+      "motorcycle": "El seguro de motocicleta lo protege a usted y a su moto con cobertura de responsabilidad, colisión, integral y médica. Requerido por ley en la mayoría de los estados y esencial para su seguridad y protección financiera.",
+      "rv": "El seguro de tráiler y casa rodante protege su vehículo recreativo con cobertura de responsabilidad, colisión, daños integrales y pertenencias personales dentro del RV. Perfecto para viajes y aventuras."
+    },
     "cta": {
       "title": "Proteger a su familia comienza con el seguro adecuado.",
       "quote": "Obtenga una Cotización Gratuita",
@@ -201,6 +212,17 @@
       "cyber": "Seguro de Responsabilidad Cibernética",
       "flood": "Seguro de Inundación Comercial"
     },
+    "details": {
+      "liability": "El seguro de responsabilidad general protege su negocio contra reclamaciones por lesiones corporales, daños a la propiedad y lesiones publicitarias. Cobertura esencial para cualquier negocio que interactúa con clientes o el público.",
+      "property": "El seguro de propiedad comercial cubre su edificio empresarial, equipos, inventario y muebles contra incendios, robos, vandalismo y desastres naturales. Protege sus activos físicos y mantiene su negocio en funcionamiento.",
+      "workers": "El seguro de compensación de trabajadores cubre gastos médicos y salarios perdidos para empleados lesionados en el trabajo. Requerido por ley en la mayoría de los estados y protege tanto a su equipo como a su negocio de demandas costosas.",
+      "auto": "El seguro de auto comercial protege vehículos utilizados con fines comerciales. Cubre responsabilidad, colisión, daños integrales y gastos médicos para conductores y pasajeros.",
+      "bop": "Una Póliza de Propietario de Negocio (BOP) combina seguro de responsabilidad general y propiedad comercial en un paquete conveniente y rentable. Ideal para pequeñas y medianas empresas.",
+      "professional": "El seguro de responsabilidad profesional (Errores y Omisiones) protege su negocio contra reclamaciones de negligencia, errores o falta de entrega de servicios. Esencial para consultores, contratistas y profesionales de servicios.",
+      "umbrella": "El seguro paraguas comercial proporciona cobertura adicional de responsabilidad más allá de sus pólizas comerciales principales. Protege su empresa de reclamaciones importantes y demandas que exceden los límites estándar de la póliza.",
+      "cyber": "El seguro de responsabilidad cibernética protege su negocio contra violaciones de datos, ciberataques e incidentes de seguridad digital. Cubre honorarios legales, costos de notificación, monitoreo de crédito y multas regulatorias.",
+      "flood": "El seguro de inundación comercial protege su propiedad y contenido empresarial contra daños por inundaciones, que normalmente no están cubiertos por pólizas de propiedad comercial estándar. Crítico para negocios en áreas propensas a inundaciones."
+    },
     "cta": {
       "title": "Su negocio merece seguridad, estabilidad y tranquilidad.",
       "quote": "Obtenga una Cotización Gratuita",
@@ -222,6 +244,14 @@
       "rehab": "Servicios de Rehabilitación",
       "employer": "Protección de Responsabilidad del Empleador",
       "illness": "Cobertura de Enfermedades Relacionadas con el Trabajo"
+    },
+    "details": {
+      "medical": "Cubre todos los costos médicos relacionados con lesiones en el lugar de trabajo, incluida atención de emergencia, hospitalizaciones, cirugías, medicamentos y tratamientos continuos. Garantiza que sus empleados reciban la atención que necesitan rápidamente.",
+      "wages": "Proporciona reemplazo parcial de salario para empleados que no pueden trabajar debido a lesiones o enfermedades relacionadas con el trabajo. Típicamente cubre un porcentaje de su salario regular mientras se recuperan.",
+      "disability": "Ofrece apoyo financiero para empleados que sufren discapacidades permanentes o temporales por accidentes laborales. Incluye beneficios por discapacidad parcial y total.",
+      "rehab": "Cubre fisioterapia, terapia ocupacional, capacitación vocacional y otros servicios de rehabilitación para ayudar a los empleados lesionados a recuperarse y regresar al trabajo lo antes posible.",
+      "employer": "Protege su negocio de demandas presentadas por empleados por lesiones en el lugar de trabajo. Cubre costos de defensa legal y acuerdos si un empleado alega negligencia o condiciones de trabajo inseguras.",
+      "illness": "Proporciona cobertura para enfermedades causadas por condiciones del lugar de trabajo, como problemas respiratorios, exposición química, lesiones por esfuerzo repetitivo y otras enfermedades ocupacionales."
     },
     "benefits": {
       "title": "Beneficios para Su Negocio",

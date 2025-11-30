@@ -1,8 +1,16 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from '@/components/ui/dialog';
 import workersSafety from '@/assets/workers-safety.jpg';
 import {
   HeartPulse,
@@ -16,6 +24,7 @@ import {
 
 const WorkersCompensation = () => {
   const { t } = useTranslation();
+  const [selectedCoverage, setSelectedCoverage] = useState<string | null>(null);
 
   const coverageCards = [
     { icon: Stethoscope, key: 'medical' },
@@ -104,7 +113,10 @@ const WorkersCompensation = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                 >
-                  <Card className="h-full hover-lift border-border bg-card hover:shadow-lg transition-all duration-300 group">
+                  <Card 
+                    className="h-full hover-lift border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
+                    onClick={() => setSelectedCoverage(card.key)}
+                  >
                     <CardContent className="p-6 text-center">
                       <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary/20 transition-colors">
                         <Icon className="h-8 w-8 text-secondary" />
@@ -177,6 +189,20 @@ const WorkersCompensation = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* Coverage Details Dialog */}
+      <Dialog open={!!selectedCoverage} onOpenChange={() => setSelectedCoverage(null)}>
+        <DialogContent className="max-w-2xl">
+          <DialogHeader>
+            <DialogTitle className="text-2xl">
+              {selectedCoverage && t(`workersComp.coverage.${selectedCoverage}`)}
+            </DialogTitle>
+            <DialogDescription className="text-base pt-4">
+              {selectedCoverage && t(`workersComp.details.${selectedCoverage}`)}
+            </DialogDescription>
+          </DialogHeader>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };

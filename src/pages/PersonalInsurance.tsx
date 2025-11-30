@@ -1,8 +1,16 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from '@/components/ui/dialog';
 import heroFamilyImage from '@/assets/hero-family.jpg';
 import autoHome from '@/assets/auto-home.jpg';
 import rentersCondo from '@/assets/renters-condo.jpg';
@@ -20,6 +28,7 @@ import {
 
 const PersonalInsurance = () => {
   const { t } = useTranslation();
+  const [selectedInsurance, setSelectedInsurance] = useState<string | null>(null);
 
   const insuranceOptions = [
     { icon: Car, key: 'auto' },
@@ -122,7 +131,10 @@ const PersonalInsurance = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                 >
-                  <Card className="h-full hover-lift border-border bg-card hover:shadow-lg transition-all duration-300 group">
+                  <Card 
+                    className="h-full hover-lift border-border bg-card hover:shadow-lg transition-all duration-300 group cursor-pointer"
+                    onClick={() => setSelectedInsurance(option.key)}
+                  >
                     <CardContent className="p-6 text-center">
                       <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary/20 transition-colors">
                         <Icon className="h-8 w-8 text-secondary" />
@@ -163,6 +175,20 @@ const PersonalInsurance = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* Insurance Details Dialog */}
+      <Dialog open={!!selectedInsurance} onOpenChange={() => setSelectedInsurance(null)}>
+        <DialogContent className="max-w-2xl">
+          <DialogHeader>
+            <DialogTitle className="text-2xl">
+              {selectedInsurance && t(`personalInsurance.options.${selectedInsurance}`)}
+            </DialogTitle>
+            <DialogDescription className="text-base pt-4">
+              {selectedInsurance && t(`personalInsurance.details.${selectedInsurance}`)}
+            </DialogDescription>
+          </DialogHeader>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
