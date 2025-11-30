@@ -62,6 +62,21 @@
     "text": "We are an insurance agency created to make life easier for people living in the United States. We believe insurance should not be complicated or expensive. Our role is to represent you, not the insurance company. That is why we compare several carriers and recommend only what truly fits your needs.",
     "learnMore": "Learn More About Us"
   },
+  "contactPreview": {
+    "title": "Are you ready?",
+    "step1": {
+      "title": "STEP 1",
+      "description": "Fill out the form."
+    },
+    "step2": {
+      "title": "STEP 2",
+      "description": "Review your options with us."
+    },
+    "step3": {
+      "title": "STEP 3",
+      "description": "Get the coverage you need."
+    }
+  },
   "howItWorks": {
     "title": "How It Works",
     "step1": {

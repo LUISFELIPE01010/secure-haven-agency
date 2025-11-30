@@ -62,6 +62,21 @@
     "text": "Somos uma agência de seguros criada para facilitar a vida das pessoas que vivem nos Estados Unidos. Acreditamos que o seguro não deve ser complicado ou caro. Nosso papel é representar você, não a seguradora. É por isso que comparamos várias seguradoras e recomendamos apenas o que realmente se adequa às suas necessidades.",
     "learnMore": "Saiba Mais Sobre Nós"
   },
+  "contactPreview": {
+    "title": "Você está pronto?",
+    "step1": {
+      "title": "ETAPA 1",
+      "description": "Preencha o formulário."
+    },
+    "step2": {
+      "title": "ETAPA 2",
+      "description": "Revise suas opções conosco."
+    },
+    "step3": {
+      "title": "ETAPA 3",
+      "description": "Obtenha a cobertura de que precisa."
+    }
+  },
   "howItWorks": {
     "title": "Como Funciona",
     "step1": {
