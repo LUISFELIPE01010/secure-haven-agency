@@ -278,5 +278,21 @@
     "title": "Página No Encontrada",
     "text": "Lo sentimos, no pudimos encontrar la página que está buscando.",
     "button": "Volver al Inicio"
+  },
+  "admin": {
+    "title": "Panel Admin",
+    "subtitle": "Gestionar envíos de formularios",
+    "logout": "Cerrar Sesión",
+    "filterByPeriod": "Filtrar por período",
+    "all": "Todos",
+    "today": "Hoy",
+    "thisWeek": "Esta Semana",
+    "thisMonth": "Este Mes",
+    "quotes": "Cotizaciones",
+    "contacts": "Contactos",
+    "noQuotes": "No se encontraron cotizaciones para este período.",
+    "noContacts": "No se encontraron contactos para este período.",
+    "accessDenied": "Acceso Denegado",
+    "noPermission": "No tienes permiso de administrador."
   }
 }
