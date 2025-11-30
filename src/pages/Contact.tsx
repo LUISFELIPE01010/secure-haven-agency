@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import QuoteForm from '@/components/QuoteForm';
+import ContactForm from '@/components/ContactForm';
 import { Phone, Mail, MessageCircle } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -103,7 +103,7 @@ const Contact = () => {
             transition={{ duration: 0.6 }}
             className="max-w-2xl mx-auto"
           >
-            <QuoteForm />
+            <ContactForm />
           </motion.div>
         </div>
       </section>

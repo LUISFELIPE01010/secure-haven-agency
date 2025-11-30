@@ -11,9 +11,13 @@ import {
   SelectTrigger,
   SelectValue,
 } from './ui/select';
+import { supabase } from '@/integrations/supabase/client';
+import { useToast } from '@/hooks/use-toast';
 
 const QuoteForm = () => {
   const { t } = useTranslation();
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -24,10 +28,48 @@ const QuoteForm = () => {
     consent: false,
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Future Supabase integration
-    console.log('Form submitted:', formData);
+    setIsSubmitting(true);
+
+    try {
+      const { error } = await supabase
+        .from('quote_submissions')
+        .insert([{
+          first_name: formData.firstName,
+          last_name: formData.lastName,
+          email: formData.email,
+          phone: formData.phone,
+          help_type: formData.helpType,
+          language: formData.language,
+        }]);
+
+      if (error) throw error;
+
+      toast({
+        title: t('form.successTitle') || 'Success!',
+        description: t('form.successMessage') || 'We will contact you soon.',
+      });
+
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        helpType: '',
+        language: 'en',
+        consent: false,
+      });
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast({
+        title: 'Error',
+        description: 'There was an error submitting your form. Please try again.',
+        variant: 'destructive',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -175,9 +217,10 @@ const QuoteForm = () => {
 
         <Button
           type="submit"
+          disabled={isSubmitting}
           className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/90 h-12 text-base font-medium"
         >
-          {t('form.submit')}
+          {isSubmitting ? t('form.submitting') || 'Submitting...' : t('form.submit')}
         </Button>
       </form>
 
