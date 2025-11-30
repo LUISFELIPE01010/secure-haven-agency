@@ -14,6 +14,7 @@ import {
 } from '@/components/ui/select';
 import { LogOut, Mail, Phone, MessageSquare, Calendar } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import { useTranslation } from 'react-i18next';
 
 interface QuoteSubmission {
   id: string;
@@ -40,6 +41,7 @@ interface ContactSubmission {
 const Admin = () => {
   const navigate = useNavigate();
   const { toast } = useToast();
+  const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(true);
   const [isAdmin, setIsAdmin] = useState(false);
   const [quoteSubmissions, setQuoteSubmissions] = useState<QuoteSubmission[]>([]);
@@ -67,8 +69,8 @@ const Admin = () => {
 
       if (!adminRole) {
         toast({
-          title: 'Acesso negado',
-          description: 'Você não tem permissão de admin.',
+          title: t('admin.accessDenied') || 'Access Denied',
+          description: t('admin.noPermission') || 'You do not have admin permission.',
           variant: 'destructive',
         });
         navigate('/');
@@ -166,28 +168,28 @@ const Admin = () => {
           <div className="flex justify-between items-center mb-8">
             <div>
               <h1 className="text-4xl font-bold text-foreground mb-2">
-                Painel Admin
+                {t('admin.title') || 'Admin Panel'}
               </h1>
               <p className="text-muted-foreground">
-                Gerencie as submissões dos formulários
+                {t('admin.subtitle') || 'Manage form submissions'}
               </p>
             </div>
             <Button onClick={handleSignOut} variant="outline">
               <LogOut className="mr-2 h-4 w-4" />
-              Sair
+              {t('admin.logout') || 'Logout'}
             </Button>
           </div>
 
           <div className="mb-6">
             <Select value={timeFilter} onValueChange={setTimeFilter}>
               <SelectTrigger className="w-[200px]">
-                <SelectValue placeholder="Filtrar por período" />
+                <SelectValue placeholder={t('admin.filterByPeriod') || 'Filter by period'} />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="all">Todos</SelectItem>
-                <SelectItem value="today">Hoje</SelectItem>
-                <SelectItem value="week">Esta semana</SelectItem>
-                <SelectItem value="month">Este mês</SelectItem>
+                <SelectItem value="all">{t('admin.all') || 'All'}</SelectItem>
+                <SelectItem value="today">{t('admin.today') || 'Today'}</SelectItem>
+                <SelectItem value="week">{t('admin.thisWeek') || 'This Week'}</SelectItem>
+                <SelectItem value="month">{t('admin.thisMonth') || 'This Month'}</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -195,10 +197,10 @@ const Admin = () => {
           <Tabs defaultValue="quotes" className="w-full">
             <TabsList className="grid w-full max-w-md grid-cols-2">
               <TabsTrigger value="quotes">
-                Cotações ({filteredQuotes.length})
+                {t('admin.quotes') || 'Quotes'} ({filteredQuotes.length})
               </TabsTrigger>
               <TabsTrigger value="contacts">
-                Contatos ({filteredContacts.length})
+                {t('admin.contacts') || 'Contacts'} ({filteredContacts.length})
               </TabsTrigger>
             </TabsList>
 
@@ -207,7 +209,7 @@ const Admin = () => {
                 {filteredQuotes.length === 0 ? (
                   <Card>
                     <CardContent className="p-8 text-center text-muted-foreground">
-                      Nenhuma cotação encontrada para este período.
+                      {t('admin.noQuotes') || 'No quotes found for this period.'}
                     </CardContent>
                   </Card>
                 ) : (
@@ -258,7 +260,7 @@ const Admin = () => {
                 {filteredContacts.length === 0 ? (
                   <Card>
                     <CardContent className="p-8 text-center text-muted-foreground">
-                      Nenhum contato encontrado para este período.
+                      {t('admin.noContacts') || 'No contacts found for this period.'}
                     </CardContent>
                   </Card>
                 ) : (

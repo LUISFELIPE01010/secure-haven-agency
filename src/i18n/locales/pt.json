@@ -278,5 +278,21 @@
     "title": "Página Não Encontrada",
     "text": "Desculpe, não conseguimos encontrar a página que você está procurando.",
     "button": "Voltar para o Início"
+  },
+  "admin": {
+    "title": "Painel Admin",
+    "subtitle": "Gerenciar envios de formulários",
+    "logout": "Sair",
+    "filterByPeriod": "Filtrar por período",
+    "all": "Todos",
+    "today": "Hoje",
+    "thisWeek": "Esta Semana",
+    "thisMonth": "Este Mês",
+    "quotes": "Cotações",
+    "contacts": "Contatos",
+    "noQuotes": "Nenhuma cotação encontrada para este período.",
+    "noContacts": "Nenhum contato encontrado para este período.",
+    "accessDenied": "Acesso Negado",
+    "noPermission": "Você não tem permissão de administrador."
   }
 }

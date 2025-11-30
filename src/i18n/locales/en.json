@@ -278,5 +278,21 @@
     "title": "Page Not Found",
     "text": "Sorry, we couldn't find the page you're looking for.",
     "button": "Go Back Home"
+  },
+  "admin": {
+    "title": "Admin Panel",
+    "subtitle": "Manage form submissions",
+    "logout": "Logout",
+    "filterByPeriod": "Filter by period",
+    "all": "All",
+    "today": "Today",
+    "thisWeek": "This Week",
+    "thisMonth": "This Month",
+    "quotes": "Quotes",
+    "contacts": "Contacts",
+    "noQuotes": "No quotes found for this period.",
+    "noContacts": "No contacts found for this period.",
+    "accessDenied": "Access Denied",
+    "noPermission": "You do not have admin permission."
   }
 }

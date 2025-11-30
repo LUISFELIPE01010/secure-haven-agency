@@ -42,13 +42,37 @@ const Auth = () => {
     setIsLoading(true);
 
     try {
+      // First, try to create the admin user if it doesn't exist
+      const createResponse = await fetch(`${import.meta.env.VITE_SUPABASE_URL}/functions/v1/create-admin`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (!createResponse.ok) {
+        console.log('Admin user might already exist, trying to login...');
+      }
+
       // Sign in with the admin account
-      const { error } = await supabase.auth.signInWithPassword({
+      const { data, error } = await supabase.auth.signInWithPassword({
         email: 'admin@ngfamilyshield.com',
         password: 'NGadmin123!@#',
       });
       
-      if (error) throw error;
+      if (error) {
+        // If user doesn't exist, show helpful message
+        if (error.message.includes('Invalid login credentials')) {
+          toast({
+            title: 'Setup Required',
+            description: 'Please contact support to set up your admin account.',
+            variant: 'destructive',
+          });
+        } else {
+          throw error;
+        }
+        return;
+      }
       
       navigate('/admin');
     } catch (error: any) {
@@ -87,7 +111,7 @@ const Auth = () => {
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
                     required
-                    placeholder="NGadmin"
+                    placeholder="Username"
                     className="mt-1.5"
                   />
                 </div>
