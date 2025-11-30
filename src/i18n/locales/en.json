@@ -116,6 +116,34 @@
     "callToAction": "Prefer to talk directly?",
     "callInfo": "Call us at: 617-625-1900 or email: info@ngfamilyshield.com"
   },
+  "contactForm": {
+    "title": "Contact NG Family Shield",
+    "firstName": "First Name *",
+    "lastName": "Last Name *",
+    "email": "Email *",
+    "phone": "Phone *",
+    "message": "How can we help you? *",
+    "firstNamePlaceholder": "First Name",
+    "lastNamePlaceholder": "Last Name",
+    "emailPlaceholder": "your@email.com",
+    "phonePlaceholder": "(617) 625-1900",
+    "messagePlaceholder": "Please do not include confidential and private information in this area.",
+    "legalNotice": "Legal Notice *",
+    "consentText": "I understand. By submitting my phone number, I authorize NG Family Shield to communicate with me via text messages.",
+    "sending": "Sending...",
+    "submit": "Submit",
+    "dontLikeForms": "Don't like forms? Contact us at",
+    "or": "or",
+    "emailUs": "email us",
+    "success": {
+      "title": "Message sent!",
+      "description": "We will contact you soon."
+    },
+    "error": {
+      "title": "Error",
+      "description": "An error occurred while sending your message. Please try again."
+    }
+  },
   "finalCta": {
     "title": "Need insurance today? We are here to help.",
     "callNow": "Call Now",
