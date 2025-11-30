@@ -50,10 +50,25 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Contact Options */}
+      {/* Contact Form */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-2xl mx-auto"
+          >
+            <ContactForm />
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Contact Options */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-8">
             {contactOptions.map((option, index) => {
               const Icon = option.icon;
               return (
@@ -90,21 +105,6 @@ const Contact = () => {
               );
             })}
           </div>
-        </div>
-      </section>
-
-      {/* Contact Form */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="max-w-2xl mx-auto"
-          >
-            <ContactForm />
-          </motion.div>
         </div>
       </section>
     </div>

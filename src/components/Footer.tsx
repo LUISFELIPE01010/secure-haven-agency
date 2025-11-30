@@ -93,10 +93,18 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
-          <p className="text-sm text-primary-foreground/60">
-            © {new Date().getFullYear()} NG Family Shield Insurance Agency. {t('footer.rights')}
-          </p>
+        <div className="border-t border-primary-foreground/20 mt-8 pt-8">
+          <div className="flex justify-between items-center">
+            <p className="text-sm text-primary-foreground/60">
+              © {new Date().getFullYear()} NG Family Shield Insurance Agency. {t('footer.rights')}
+            </p>
+            <Link 
+              to="/auth" 
+              className="text-xs text-primary-foreground/40 hover:text-primary-foreground/60 transition-colors"
+            >
+              Admin
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
