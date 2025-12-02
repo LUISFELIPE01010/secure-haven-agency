@@ -57,6 +57,11 @@
       "focused": "A team focused on what is best for you"
     }
   },
+  "licensedStates": {
+    "badge": "Licensed & Certified",
+    "title": "Proudly Licensed in 12 States",
+    "description": "NG Family Shield is officially licensed to provide insurance services across multiple states, ensuring you receive compliant and professional coverage wherever you are."
+  },
   "aboutPreview": {
     "title": "Who We Are",
     "text": "We are an insurance agency created to make life easier for people living in the United States. We believe insurance should not be complicated or expensive. Our role is to represent you, not the insurance company. That is why we compare several carriers and recommend only what truly fits your needs.",

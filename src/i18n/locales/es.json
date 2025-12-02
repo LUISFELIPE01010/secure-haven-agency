@@ -57,6 +57,11 @@
       "focused": "Un equipo enfocado en lo que es mejor para usted"
     }
   },
+  "licensedStates": {
+    "badge": "Licenciado y Certificado",
+    "title": "Con Licencia en 12 Estados",
+    "description": "NG Family Shield está oficialmente licenciado para proporcionar servicios de seguros en múltiples estados, asegurando que reciba cobertura profesional y conforme dondequiera que esté."
+  },
   "aboutPreview": {
     "title": "Quiénes Somos",
     "text": "Somos una agencia de seguros creada para facilitar la vida de las personas que viven en los Estados Unidos. Creemos que el seguro no debe ser complicado ni costoso. Nuestro papel es representarlo a usted, no a la compañía de seguros. Por eso comparamos varias aseguradoras y recomendamos solo lo que realmente se ajusta a sus necesidades.",

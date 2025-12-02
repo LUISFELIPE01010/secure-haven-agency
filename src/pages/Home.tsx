@@ -19,6 +19,7 @@ import {
   Users,
   CheckCircle2,
   MessageCircle,
+  MapPin,
 } from 'lucide-react';
 
 const Home = () => {
@@ -226,6 +227,46 @@ const Home = () => {
               </ul>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Licensed States Section */}
+      <section className="py-10 md:py-16 bg-secondary/5 border-y border-secondary/10">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center"
+          >
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <MapPin className="h-5 w-5 text-secondary" />
+              <span className="text-sm font-medium text-secondary uppercase tracking-wider">
+                {t('licensedStates.badge')}
+              </span>
+            </div>
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-foreground mb-4">
+              {t('licensedStates.title')}
+            </h2>
+            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+              {t('licensedStates.description')}
+            </p>
+            <div className="flex flex-wrap justify-center gap-2 md:gap-3 max-w-3xl mx-auto">
+              {['NJ', 'NY', 'DE', 'CT', 'PA', 'MA', 'VT', 'NH', 'SC', 'NC', 'CO', 'FL'].map((state, index) => (
+                <motion.span
+                  key={state}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: index * 0.05 }}
+                  className="px-4 py-2 bg-card border border-border rounded-full text-sm font-semibold text-foreground shadow-sm hover:border-secondary/50 hover:bg-secondary/5 transition-colors"
+                >
+                  {state}
+                </motion.span>
+              ))}
+            </div>
+          </motion.div>
         </div>
       </section>
 
