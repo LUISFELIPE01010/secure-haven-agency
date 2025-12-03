@@ -20,7 +20,6 @@ import {
   Key,
   Building2,
   Umbrella,
-  Heart,
   Droplets,
   Bike,
   Caravan,
@@ -30,16 +29,31 @@ const PersonalInsurance = () => {
   const { t } = useTranslation();
   const [selectedInsurance, setSelectedInsurance] = useState<string | null>(null);
 
+  const insuranceSpecialties = [
+    'homeowners',
+    'renters',
+    'auto',
+    'offroad',
+    'landlord',
+    'umbrella',
+    'condo',
+    'motorcycle',
+    'flood',
+    'boat',
+    'buildersRisk',
+    'rvTrailer',
+    'snowmobile',
+  ];
+
   const insuranceOptions = [
     { icon: Car, key: 'auto' },
-    { icon: HomeIcon, key: 'home' },
+    { icon: HomeIcon, key: 'homeowners' },
     { icon: Key, key: 'renters' },
     { icon: Building2, key: 'condo' },
     { icon: Umbrella, key: 'umbrella' },
-    { icon: Heart, key: 'life' },
     { icon: Droplets, key: 'flood' },
     { icon: Bike, key: 'motorcycle' },
-    { icon: Caravan, key: 'rv' },
+    { icon: Caravan, key: 'rvTrailer' },
   ];
 
   return (
@@ -105,8 +119,42 @@ const PersonalInsurance = () => {
         </div>
       </section>
 
-      {/* Insurance Options */}
+      {/* Insurance Specialties List */}
       <section className="py-12 md:py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-5xl mx-auto"
+          >
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-secondary mb-8">
+              {t('personalInsurance.specialties.title')}
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-3">
+              {insuranceSpecialties.map((specialty, index) => (
+                <motion.div
+                  key={specialty}
+                  initial={{ opacity: 0, x: -10 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: index * 0.05 }}
+                  className="flex items-center gap-3"
+                >
+                  <span className="w-2 h-2 bg-foreground rounded-full flex-shrink-0" />
+                  <span className="text-foreground text-base">
+                    {t(`personalInsurance.specialties.${specialty}`)}
+                  </span>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Insurance Options Cards */}
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -120,7 +168,7 @@ const PersonalInsurance = () => {
             </h2>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
             {insuranceOptions.map((option, index) => {
               const Icon = option.icon;
               return (
@@ -140,7 +188,7 @@ const PersonalInsurance = () => {
                         <Icon className="h-8 w-8 text-secondary" />
                       </div>
                       <h3 className="font-semibold text-lg text-foreground">
-                        {t(`personalInsurance.options.${option.key}`)}
+                        {t(`personalInsurance.specialties.${option.key}`)}
                       </h3>
                     </CardContent>
                   </Card>

@@ -197,28 +197,34 @@
     "intro": {
       "text": "A vida traz situações inesperadas. Nossas opções de seguro pessoal oferecem tranquilidade, proteção financeira e a segurança que sua família merece. Como agência independente, comparamos várias seguradoras para encontrar a cobertura certa para suas necessidades. Se você está protegendo seu veículo, sua casa ou seus bens pessoais, tornamos o processo simples e sem estresse."
     },
-    "options": {
-      "title": "Opções de Seguro Pessoal",
-      "auto": "Seguro Automotivo",
-      "home": "Seguro Residencial",
+    "specialties": {
+      "title": "Especialidades de Seguro Pessoal incluem:",
+      "homeowners": "Seguro Residencial",
       "renters": "Seguro de Locatário",
-      "condo": "Seguro de Condomínio",
-      "umbrella": "Seguro Guarda-Chuva",
-      "life": "Seguro de Vida",
-      "flood": "Seguro de Inundação",
+      "auto": "Seguro Automotivo",
+      "offroad": "Veículos Off-road",
+      "landlord": "Proprietário",
+      "umbrella": "Guarda-Chuva",
+      "condo": "Condomínio",
       "motorcycle": "Seguro de Motocicleta",
-      "rv": "Seguro de Trailer e Motorhome"
+      "flood": "Seguro de Inundação",
+      "boat": "Barco",
+      "buildersRisk": "Risco de Construção",
+      "rvTrailer": "RV/Trailer",
+      "snowmobile": "Moto de Neve"
+    },
+    "options": {
+      "title": "Saiba Mais Sobre Nossas Coberturas"
     },
     "details": {
       "auto": "O seguro automotivo protege você financeiramente em caso de acidentes, roubo ou danos ao seu veículo. Pode incluir cobertura de responsabilidade, colisão, abrangente e muito mais. Obtenha a cobertura que você precisa pelo melhor preço comparando várias seguradoras.",
-      "home": "O seguro residencial protege sua casa e bens pessoais contra danos causados por incêndio, tempestades, roubo e outros eventos cobertos. Também inclui proteção de responsabilidade se alguém se machucar em sua propriedade.",
+      "homeowners": "O seguro residencial protege sua casa e bens pessoais contra danos causados por incêndio, tempestades, roubo e outros eventos cobertos. Também inclui proteção de responsabilidade se alguém se machucar em sua propriedade.",
       "renters": "O seguro de locatário protege seus bens pessoais em um apartamento ou casa alugada. Cobre roubo, incêndio, danos causados pela água e inclui proteção de responsabilidade. É acessível e essencial para inquilinos.",
       "condo": "O seguro de condomínio é projetado especificamente para proprietários de condomínios, cobrindo o interior da sua unidade, bens pessoais e responsabilidade. Complementa a apólice mestre da associação de condomínios.",
       "umbrella": "O seguro guarda-chuva fornece cobertura adicional de responsabilidade além de suas apólices de automóvel e residencial. Protege seus ativos e ganhos futuros em caso de grandes reivindicações ou processos.",
-      "life": "O seguro de vida fornece segurança financeira para seus entes queridos em caso de falecimento. Pode cobrir custos funerários, dívidas, pagamentos de hipoteca e fornecer substituição de renda para sua família.",
       "flood": "O seguro de inundação protege sua casa e pertences contra danos causados por inundações, que normalmente não são cobertos pelo seguro residencial padrão. Essencial para propriedades em áreas propensas a inundações.",
       "motorcycle": "O seguro de motocicleta protege você e sua moto com cobertura de responsabilidade, colisão, abrangente e médica. Exigido por lei na maioria dos estados e essencial para sua segurança e proteção financeira.",
-      "rv": "O seguro de trailer e motorhome protege seu veículo recreativo com cobertura de responsabilidade, colisão, danos abrangentes e bens pessoais dentro do RV. Perfeito para viagens e aventuras."
+      "rvTrailer": "O seguro de trailer e motorhome protege seu veículo recreativo com cobertura de responsabilidade, colisão, danos abrangentes e bens pessoais dentro do RV. Perfeito para viagens e aventuras."
     },
     "cta": {
       "title": "Proteger sua família começa com o seguro certo.",
@@ -233,28 +239,31 @@
     "intro": {
       "text": "Administrar uma empresa traz riscos. O seguro certo é essencial para proteger operações, funcionários e ativos. Como agência independente, trabalhamos com várias seguradoras para encontrar a cobertura exata que sua empresa precisa, sem pagar a mais. Desde proteção de responsabilidade até cobertura de funcionários, tornamos o processo claro, rápido e sem estresse."
     },
+    "specialties": {
+      "title": "Especialidades de Seguro Empresarial incluem:",
+      "generalLiability": "Seguro de Responsabilidade Geral",
+      "professionalLiability": "Seguro de Responsabilidade Profissional",
+      "businessInterruption": "Seguro de Interrupção de Negócios",
+      "cyberLiability": "Seguro de Responsabilidade Cibernética",
+      "liquorLiability": "Responsabilidade por Bebidas Alcoólicas",
+      "lessorsRisk": "Risco do Locador",
+      "commercialVehicle": "Seguro de Veículo Comercial",
+      "workersComp": "Seguro de Acidentes de Trabalho",
+      "multiFamilyHousing": "Cobertura Multi-Familiar",
+      "churchTemple": "Seguro para Igreja/Templo",
+      "contractors": "Seguro para Empreiteiros",
+      "bop": "BOP"
+    },
     "options": {
-      "title": "Opções de Seguro Empresarial",
-      "liability": "Seguro de Responsabilidade Geral",
-      "property": "Seguro de Propriedade Comercial",
-      "workers": "Seguro de Acidentes de Trabalho",
-      "auto": "Seguro Automotivo Comercial",
-      "bop": "Política de Proprietário de Negócio (BOP)",
-      "professional": "Responsabilidade Profissional (E&O)",
-      "umbrella": "Seguro Guarda-Chuva Comercial",
-      "cyber": "Seguro de Responsabilidade Cibernética",
-      "flood": "Seguro de Inundação Comercial"
+      "title": "Saiba Mais Sobre Nossas Coberturas"
     },
     "details": {
-      "liability": "O seguro de responsabilidade geral protege sua empresa contra reclamações de lesões corporais, danos materiais e lesões publicitárias. Cobertura essencial para qualquer empresa que interage com clientes ou o público.",
-      "property": "O seguro de propriedade comercial cobre seu prédio empresarial, equipamentos, estoque e mobília contra incêndio, roubo, vandalismo e desastres naturais. Protege seus ativos físicos e mantém sua empresa funcionando.",
-      "workers": "O seguro de acidentes de trabalho cobre despesas médicas e salários perdidos para funcionários feridos no trabalho. Exigido por lei na maioria dos estados e protege tanto sua equipe quanto sua empresa de processos caros.",
-      "auto": "O seguro automotivo comercial protege veículos usados para fins comerciais. Cobre responsabilidade, colisão, danos abrangentes e despesas médicas para motoristas e passageiros.",
+      "generalLiability": "O seguro de responsabilidade geral protege sua empresa contra reclamações de lesões corporais, danos materiais e lesões publicitárias. Cobertura essencial para qualquer empresa que interage com clientes ou o público.",
+      "professionalLiability": "O seguro de responsabilidade profissional (Erros e Omissões) protege sua empresa contra reclamações de negligência, erros ou falha na entrega de serviços. Essencial para consultores, empreiteiros e profissionais de serviços.",
+      "workersComp": "O seguro de acidentes de trabalho cobre despesas médicas e salários perdidos para funcionários feridos no trabalho. Exigido por lei na maioria dos estados e protege tanto sua equipe quanto sua empresa de processos caros.",
+      "commercialVehicle": "O seguro automotivo comercial protege veículos usados para fins comerciais. Cobre responsabilidade, colisão, danos abrangentes e despesas médicas para motoristas e passageiros.",
       "bop": "Uma Política de Proprietário de Negócio (BOP) combina seguro de responsabilidade geral e propriedade comercial em um pacote conveniente e econômico. Ideal para pequenas e médias empresas.",
-      "professional": "O seguro de responsabilidade profissional (Erros e Omissões) protege sua empresa contra reclamações de negligência, erros ou falha na entrega de serviços. Essencial para consultores, empreiteiros e profissionais de serviços.",
-      "umbrella": "O seguro guarda-chuva comercial fornece cobertura adicional de responsabilidade além de suas apólices comerciais primárias. Protege sua empresa de grandes reclamações e processos que excedem os limites padrão da apólice.",
-      "cyber": "O seguro de responsabilidade cibernética protege sua empresa contra violações de dados, ataques cibernéticos e incidentes de segurança digital. Cobre honorários legais, custos de notificação, monitoramento de crédito e multas regulatórias.",
-      "flood": "O seguro de inundação comercial protege sua propriedade e conteúdo empresarial contra danos causados por inundações, que normalmente não são cobertos por apólices de propriedade comercial padrão. Crítico para empresas em áreas propensas a inundações."
+      "cyberLiability": "O seguro de responsabilidade cibernética protege sua empresa contra violações de dados, ataques cibernéticos e incidentes de segurança digital. Cobre honorários legais, custos de notificação, monitoramento de crédito e multas regulatórias."
     },
     "cta": {
       "title": "Sua empresa merece segurança, estabilidade e tranquilidade.",

@@ -15,30 +15,39 @@ import businessHeroImage from '@/assets/business-hero.jpg';
 import businessTeam from '@/assets/business-team.jpg';
 import {
   Shield,
-  Building2,
   Users,
   Car,
   Briefcase,
   FileText,
-  Umbrella,
   Laptop,
-  Droplets,
 } from 'lucide-react';
 
 const BusinessInsurance = () => {
   const { t } = useTranslation();
   const [selectedInsurance, setSelectedInsurance] = useState<string | null>(null);
 
+  const insuranceSpecialties = [
+    'generalLiability',
+    'professionalLiability',
+    'businessInterruption',
+    'cyberLiability',
+    'liquorLiability',
+    'lessorsRisk',
+    'commercialVehicle',
+    'workersComp',
+    'multiFamilyHousing',
+    'churchTemple',
+    'contractors',
+    'bop',
+  ];
+
   const insuranceOptions = [
-    { icon: Shield, key: 'liability' },
-    { icon: Building2, key: 'property' },
-    { icon: Users, key: 'workers' },
-    { icon: Car, key: 'auto' },
+    { icon: Shield, key: 'generalLiability' },
+    { icon: FileText, key: 'professionalLiability' },
+    { icon: Users, key: 'workersComp' },
+    { icon: Car, key: 'commercialVehicle' },
     { icon: Briefcase, key: 'bop' },
-    { icon: FileText, key: 'professional' },
-    { icon: Umbrella, key: 'umbrella' },
-    { icon: Laptop, key: 'cyber' },
-    { icon: Droplets, key: 'flood' },
+    { icon: Laptop, key: 'cyberLiability' },
   ];
 
   return (
@@ -91,8 +100,42 @@ const BusinessInsurance = () => {
         </div>
       </section>
 
-      {/* Insurance Options */}
+      {/* Insurance Specialties List */}
       <section className="py-12 md:py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-5xl mx-auto"
+          >
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-secondary mb-8">
+              {t('businessInsurance.specialties.title')}
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-3">
+              {insuranceSpecialties.map((specialty, index) => (
+                <motion.div
+                  key={specialty}
+                  initial={{ opacity: 0, x: -10 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: index * 0.05 }}
+                  className="flex items-center gap-3"
+                >
+                  <span className="w-2 h-2 bg-foreground rounded-full flex-shrink-0" />
+                  <span className="text-foreground text-base">
+                    {t(`businessInsurance.specialties.${specialty}`)}
+                  </span>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Insurance Options Cards */}
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -126,7 +169,7 @@ const BusinessInsurance = () => {
                         <Icon className="h-8 w-8 text-secondary" />
                       </div>
                       <h3 className="font-semibold text-lg text-foreground">
-                        {t(`businessInsurance.options.${option.key}`)}
+                        {t(`businessInsurance.specialties.${option.key}`)}
                       </h3>
                     </CardContent>
                   </Card>
