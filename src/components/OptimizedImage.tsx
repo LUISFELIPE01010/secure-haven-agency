@@ -34,8 +34,8 @@ const OptimizedImage = ({
         }
       },
       {
-        rootMargin: '100px',
-        threshold: 0.1,
+        rootMargin: '200px',
+        threshold: 0,
       }
     );
 
@@ -50,7 +50,7 @@ const OptimizedImage = ({
     <div 
       ref={imgRef} 
       className={cn(
-        'relative overflow-hidden bg-muted/30',
+        'relative overflow-hidden',
         wrapperClassName
       )}
     >
@@ -58,12 +58,9 @@ const OptimizedImage = ({
       {!isLoaded && (
         <div 
           className={cn(
-            'absolute inset-0 animate-pulse bg-gradient-to-r from-muted/30 via-muted/50 to-muted/30 bg-[length:200%_100%]',
+            'absolute inset-0 bg-muted/30 animate-pulse',
             className
           )}
-          style={{
-            animation: 'shimmer 1.5s infinite',
-          }}
         />
       )}
       
@@ -76,7 +73,7 @@ const OptimizedImage = ({
           decoding="async"
           onLoad={() => setIsLoaded(true)}
           className={cn(
-            'transition-opacity duration-500',
+            'transition-opacity duration-300',
             isLoaded ? 'opacity-100' : 'opacity-0',
             className
           )}
