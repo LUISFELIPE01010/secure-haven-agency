@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import OptimizedImage from '@/components/OptimizedImage';
 import {
   Dialog,
   DialogContent,
@@ -55,13 +56,11 @@ const BusinessInsurance = () => {
       {/* Hero Section */}
       <section className="relative pt-24 pb-12 md:pt-32 lg:pt-40 md:pb-20 lg:pb-28 bg-gradient-to-b from-muted/30 to-background overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <motion.img 
-            initial={{ scale: 1.1 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 1.5 }}
+          <OptimizedImage 
             src={businessHeroImage} 
             alt="Business professional" 
             className="w-full h-full object-cover"
+            priority
           />
         </div>
         <div className="container mx-auto px-4 relative z-10">
@@ -91,10 +90,11 @@ const BusinessInsurance = () => {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto"
           >
-            <img 
+            <OptimizedImage 
               src={businessTeam} 
               alt="Business Team" 
               className="rounded-2xl shadow-2xl w-full h-auto hover-lift"
+              wrapperClassName="rounded-2xl"
             />
           </motion.div>
         </div>
