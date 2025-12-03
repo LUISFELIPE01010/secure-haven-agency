@@ -68,7 +68,7 @@ const Home = () => {
                   <Link to="/contact">{t('hero.cta')}</Link>
                 </Button>
                 <Button asChild size="lg" variant="outline">
-                  <a href="tel:617-625-1900">Call 617-625-1900</a>
+                  <a href="tel:732-578-8877">Call 732-578-8877</a>
                 </Button>
               </div>
               <p className="text-sm text-muted-foreground flex items-center gap-2">
@@ -367,10 +367,10 @@ const Home = () => {
             </h2>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
-                <a href="tel:617-625-1900">{t('finalCta.callNow')}</a>
+                <a href="tel:732-578-8877">{t('finalCta.callNow')}</a>
               </Button>
               <Button asChild size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-                <a href="https://wa.me/16176251900" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/17325788877" target="_blank" rel="noopener noreferrer">
                   {t('finalCta.whatsapp')}
                 </a>
               </Button>
