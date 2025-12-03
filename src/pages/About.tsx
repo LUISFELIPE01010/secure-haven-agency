@@ -189,7 +189,7 @@ const About = () => {
                 <Link to="/contact">Get a Free Quote</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-                <a href="tel:617-625-1900">Talk to an Agent</a>
+                <a href="tel:732-578-8877">Talk to an Agent</a>
               </Button>
             </div>
           </motion.div>

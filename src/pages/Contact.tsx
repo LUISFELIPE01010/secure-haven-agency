@@ -10,14 +10,14 @@ const Contact = () => {
       icon: Phone,
       title: 'Phone Support',
       description: 'Call us directly for immediate assistance',
-      action: 'tel:617-625-1900',
-      label: '617-625-1900',
+      action: 'tel:732-578-8877',
+      label: '732-578-8877',
     },
     {
       icon: MessageCircle,
       title: 'WhatsApp Support',
       description: 'Message us on WhatsApp for quick responses',
-      action: 'https://wa.me/16176251900',
+      action: 'https://wa.me/17325788877',
       label: 'Chat on WhatsApp',
     },
     {

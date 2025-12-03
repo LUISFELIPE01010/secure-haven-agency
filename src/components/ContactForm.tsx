@@ -173,8 +173,8 @@ const ContactForm = () => {
 
       <div className="mt-6 pt-6 border-t border-border text-center text-sm text-muted-foreground">
         {t('contactForm.dontLikeForms')}{' '}
-        <a href="tel:617-625-1900" className="text-foreground font-medium hover:underline">
-          617-625-1900
+        <a href="tel:732-578-8877" className="text-foreground font-medium hover:underline">
+          732-578-8877
         </a>{' '}
         {t('contactForm.or')}{' '}
         <a href="mailto:info@ngfamilyshield.com" className="text-foreground font-medium hover:underline">

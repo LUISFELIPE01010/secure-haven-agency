@@ -193,7 +193,7 @@ const WorkersCompensation = () => {
                 <Link to="/contact">{t('workersComp.cta.quote')}</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary hover-lift">
-                <a href="tel:617-625-1900">{t('workersComp.cta.speak')}</a>
+                <a href="tel:732-578-8877">{t('workersComp.cta.speak')}</a>
               </Button>
             </div>
           </motion.div>
