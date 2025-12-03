@@ -6,6 +6,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import QuoteForm from '@/components/QuoteForm';
 import ContactForm from '@/components/ContactForm';
 import ReviewsCarousel from '@/components/ReviewsCarousel';
+import OptimizedImage from '@/components/OptimizedImage';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { useIsMobile } from '@/hooks/use-mobile';
 import familyProtection from '@/assets/family-protection.jpg';
@@ -186,10 +187,11 @@ const Home = () => {
               transition={{ duration: 0.6 }}
               className="order-2 lg:order-1"
             >
-              <img 
+              <OptimizedImage 
                 src={familyProtection} 
                 alt="Family Protection" 
                 className="rounded-2xl shadow-2xl w-full h-auto hover-lift"
+                wrapperClassName="rounded-2xl"
               />
             </motion.div>
             <motion.div
@@ -342,10 +344,11 @@ const Home = () => {
               transition={{ duration: 0.6 }}
               className="order-first lg:order-last"
             >
-              <img 
+              <OptimizedImage 
                 src={howItWorks} 
                 alt="How It Works" 
                 className="rounded-2xl shadow-2xl w-full h-auto hover-lift"
+                wrapperClassName="rounded-2xl"
               />
             </motion.div>
           </div>
