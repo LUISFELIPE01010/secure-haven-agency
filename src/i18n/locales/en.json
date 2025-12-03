@@ -197,28 +197,34 @@
     "intro": {
       "text": "Life brings unexpected situations. Our personal insurance options give you peace of mind, financial protection, and the security your family deserves. As an independent agency, we compare multiple carriers to find the right coverage for your needs. Whether you are protecting your vehicle, your home, or your personal assets, we make the process simple and stress-free."
     },
-    "options": {
-      "title": "Personal Insurance Options",
-      "auto": "Auto Insurance",
-      "home": "Homeowners Insurance",
+    "specialties": {
+      "title": "Personal Insurance specialties include:",
+      "homeowners": "Homeowners Insurance",
       "renters": "Renters Insurance",
-      "condo": "Condo Insurance",
-      "umbrella": "Umbrella Insurance",
-      "life": "Life Insurance",
-      "flood": "Flood Insurance",
+      "auto": "Auto Insurance",
+      "offroad": "Off-road Vehicles",
+      "landlord": "Landlord",
+      "umbrella": "Umbrella",
+      "condo": "Condo",
       "motorcycle": "Motorcycle Insurance",
-      "rv": "RV and Travel Trailer Insurance"
+      "flood": "Flood Insurance",
+      "boat": "Boat",
+      "buildersRisk": "Builders Risk",
+      "rvTrailer": "RV/Trailer",
+      "snowmobile": "Snowmobile"
+    },
+    "options": {
+      "title": "Learn More About Our Coverage"
     },
     "details": {
       "auto": "Auto insurance protects you financially in case of accidents, theft, or damage to your vehicle. It can include liability coverage, collision, comprehensive, and more. Get the coverage you need at the best price by comparing multiple carriers.",
-      "home": "Homeowners insurance protects your home and personal belongings against damage from fire, storms, theft, and other covered events. It also includes liability protection if someone is injured on your property.",
+      "homeowners": "Homeowners insurance protects your home and personal belongings against damage from fire, storms, theft, and other covered events. It also includes liability protection if someone is injured on your property.",
       "renters": "Renters insurance protects your personal belongings in a rented apartment or home. It covers theft, fire, water damage, and includes liability protection. It's affordable and essential for tenants.",
       "condo": "Condo insurance is designed specifically for condo owners, covering your unit's interior, personal belongings, and liability. It complements the condo association's master policy.",
       "umbrella": "Umbrella insurance provides additional liability coverage beyond your auto and home policies. It protects your assets and future earnings in case of major claims or lawsuits.",
-      "life": "Life insurance provides financial security for your loved ones in case of your passing. It can cover funeral costs, debts, mortgage payments, and provide income replacement for your family.",
       "flood": "Flood insurance protects your home and belongings from flood damage, which is typically not covered by standard homeowners insurance. Essential for properties in flood-prone areas.",
       "motorcycle": "Motorcycle insurance protects you and your bike with liability, collision, comprehensive, and medical coverage. Required by law in most states and essential for your safety and financial protection.",
-      "rv": "RV and travel trailer insurance protects your recreational vehicle with coverage for liability, collision, comprehensive damage, and personal belongings inside the RV. Perfect for road trips and adventures."
+      "rvTrailer": "RV and travel trailer insurance protects your recreational vehicle with coverage for liability, collision, comprehensive damage, and personal belongings inside the RV. Perfect for road trips and adventures."
     },
     "cta": {
       "title": "Protecting your family starts with the right insurance.",
@@ -233,28 +239,31 @@
     "intro": {
       "text": "Running a business comes with risks. The right insurance is essential to protect operations, employees, and assets. As an independent agency, we work with multiple carriers to find the exact coverage your business needs, without overpaying. From liability protection to employee coverage, we make the process clear, fast, and stress-free."
     },
+    "specialties": {
+      "title": "Business Insurance specialties include:",
+      "generalLiability": "General Liability Insurance",
+      "professionalLiability": "Professional Liability Insurance",
+      "businessInterruption": "Business Interruption Insurance",
+      "cyberLiability": "Cyber Liability Insurance",
+      "liquorLiability": "Liquor Liability",
+      "lessorsRisk": "Lessors Risk",
+      "commercialVehicle": "Commercial Vehicle Insurance",
+      "workersComp": "Workers Compensation",
+      "multiFamilyHousing": "Multi-Family Housing Coverage",
+      "churchTemple": "Church/Temple Insurance",
+      "contractors": "Contractors Insurance",
+      "bop": "BOP"
+    },
     "options": {
-      "title": "Business Insurance Options",
-      "liability": "General Liability Insurance",
-      "property": "Commercial Property Insurance",
-      "workers": "Workers' Compensation",
-      "auto": "Commercial Auto Insurance",
-      "bop": "Business Owner's Policy (BOP)",
-      "professional": "Professional Liability (E&O)",
-      "umbrella": "Commercial Umbrella Insurance",
-      "cyber": "Cyber Liability Insurance",
-      "flood": "Commercial Flood Insurance"
+      "title": "Learn More About Our Coverage"
     },
     "details": {
-      "liability": "General liability insurance protects your business from claims of bodily injury, property damage, and advertising injury. Essential coverage for any business that interacts with customers or the public.",
-      "property": "Commercial property insurance covers your business building, equipment, inventory, and furniture against fire, theft, vandalism, and natural disasters. Protects your physical assets and keeps your business running.",
-      "workers": "Workers' compensation insurance covers medical expenses and lost wages for employees injured on the job. Required by law in most states and protects both your team and your business from costly lawsuits.",
-      "auto": "Commercial auto insurance protects vehicles used for business purposes. Covers liability, collision, comprehensive damage, and medical expenses for drivers and passengers.",
+      "generalLiability": "General liability insurance protects your business from claims of bodily injury, property damage, and advertising injury. Essential coverage for any business that interacts with customers or the public.",
+      "professionalLiability": "Professional liability insurance (Errors & Omissions) protects your business from claims of negligence, mistakes, or failure to deliver services. Essential for consultants, contractors, and service professionals.",
+      "workersComp": "Workers' compensation insurance covers medical expenses and lost wages for employees injured on the job. Required by law in most states and protects both your team and your business from costly lawsuits.",
+      "commercialVehicle": "Commercial auto insurance protects vehicles used for business purposes. Covers liability, collision, comprehensive damage, and medical expenses for drivers and passengers.",
       "bop": "A Business Owner's Policy (BOP) combines general liability and commercial property insurance in one convenient, cost-effective package. Ideal for small and medium-sized businesses.",
-      "professional": "Professional liability insurance (Errors & Omissions) protects your business from claims of negligence, mistakes, or failure to deliver services. Essential for consultants, contractors, and service professionals.",
-      "umbrella": "Commercial umbrella insurance provides additional liability coverage beyond your primary business policies. Protects your company from major claims and lawsuits that exceed standard policy limits.",
-      "cyber": "Cyber liability insurance protects your business from data breaches, cyberattacks, and digital security incidents. Covers legal fees, notification costs, credit monitoring, and regulatory fines.",
-      "flood": "Commercial flood insurance protects your business property and contents from flood damage, which is typically not covered by standard commercial property policies. Critical for businesses in flood-prone areas."
+      "cyberLiability": "Cyber liability insurance protects your business from data breaches, cyberattacks, and digital security incidents. Covers legal fees, notification costs, credit monitoring, and regulatory fines."
     },
     "cta": {
       "title": "Your business deserves security, stability, and peace of mind.",
