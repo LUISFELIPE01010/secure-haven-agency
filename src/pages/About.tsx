@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import OptimizedImage from '@/components/OptimizedImage';
 import aboutTeamImage from '@/assets/about-team.jpg';
 import { CheckCircle2, Globe, TrendingUp, Users, MessageCircle } from 'lucide-react';
 
@@ -67,7 +66,7 @@ const About = () => {
               transition={{ duration: 0.6 }}
               className="rounded-2xl overflow-hidden shadow-lg"
             >
-              <OptimizedImage 
+              <img 
                 src={aboutTeamImage} 
                 alt="Our professional team" 
                 className="w-full h-auto object-cover"

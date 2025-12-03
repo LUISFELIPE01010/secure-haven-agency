@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import OptimizedImage from '@/components/OptimizedImage';
 import {
   Dialog,
   DialogContent,
@@ -62,11 +61,13 @@ const PersonalInsurance = () => {
       {/* Hero Section */}
       <section className="relative pt-24 pb-12 md:pt-32 lg:pt-40 md:pb-20 lg:pb-28 bg-gradient-to-b from-muted/30 to-background overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <OptimizedImage 
+          <motion.img 
+            initial={{ scale: 1.1 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 1.5 }}
             src={heroFamilyImage} 
             alt="Happy family" 
             className="w-full h-full object-cover"
-            priority
           />
         </div>
         <div className="container mx-auto px-4 relative z-10">
@@ -96,11 +97,10 @@ const PersonalInsurance = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <OptimizedImage 
+              <img 
                 src={autoHome} 
                 alt="Auto and Home Insurance" 
                 className="rounded-2xl shadow-xl w-full h-auto hover-lift"
-                wrapperClassName="rounded-2xl"
               />
             </motion.div>
             <motion.div
@@ -109,11 +109,10 @@ const PersonalInsurance = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <OptimizedImage 
+              <img 
                 src={rentersCondo} 
                 alt="Renters and Condo Insurance" 
                 className="rounded-2xl shadow-xl w-full h-auto hover-lift"
-                wrapperClassName="rounded-2xl"
               />
             </motion.div>
           </div>

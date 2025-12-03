@@ -5,7 +5,6 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog';
-import OptimizedImage from '@/components/OptimizedImage';
 import workersSafety from '@/assets/workers-safety.jpg';
 import { HeartPulse, DollarSign, UserX, Activity, ShieldCheck, Stethoscope, CheckCircle2 } from 'lucide-react';
 const WorkersCompensation = () => {
@@ -37,12 +36,13 @@ const WorkersCompensation = () => {
       {/* Hero Section */}
       <section className="relative pt-24 pb-12 md:pt-32 lg:pt-40 md:pb-20 lg:pb-28 bg-gradient-to-b from-muted/30 to-background overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <OptimizedImage 
-            src="/lovable-uploads/06becffa-bfab-43cd-9eba-6c6188be8f6a.png"
-            alt="Workers Safety" 
-            className="w-full h-full object-cover"
-            priority
-          />
+          <motion.img initial={{
+          scale: 1.1
+        }} animate={{
+          scale: 1
+        }} transition={{
+          duration: 1.5
+        }} alt="Workers Safety" className="w-full h-full object-cover" src="/lovable-uploads/06becffa-bfab-43cd-9eba-6c6188be8f6a.png" />
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <motion.div initial={{
